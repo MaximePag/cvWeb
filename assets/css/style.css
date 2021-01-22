@@ -23,6 +23,12 @@ body{
     border-top: 5px #ff0000 solid;
     background-color: white;
 }
+.tab-fix{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-top: 5px #ff0000 solid;
+    background-color: white;
+}
 .card{
     background-color: #FFFFFF;
     border-bottom-left-radius: 2em;
