@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.1-web/css/all.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body class="body-day">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">CV - Maxime Pageot</a>
@@ -31,12 +31,12 @@
     </nav>
     <section class="container-fluid">
         <div class="row">
-            <div class="col-3 tab tab-open d-none d-lg-block" onclick="toggle(this, 'present')"><p class="text-center mt-1"><i class="fas fa-home fa-2x"></i> Présentation</p></div>
-            <div class="col-2 tab tab-close d-none d-lg-block" onclick="toggle(this, 'career')"><p class="text-center mt-1"><i class="fas fa-briefcase fa-2x"></i> Parcours</p></div>
-            <div class="col-2 tab tab-close d-none d-lg-block" onclick="toggle(this, 'skills')"><p class="text-center mt-1"><i class="fas fa-laptop-code fa-2x"></i> Compétences</p></div>
-            <div class="col-2 tab tab-close d-none d-lg-block" onclick="toggle(this, 'projects')"><p class="text-center mt-1"><i class="fas fa-images fa-2x"></i> Projets Réalisés</p></div>
-            <div class="col-2 tab tab-close d-none d-lg-block" onclick="toggle(this, 'about')"><p class="text-center mt-1"><i class="fas fa-id-card fa-2x"></i> A Propos</div>
-            <div class="col-1 tab tab-open d-none d-lg-block"><i class="fas fa-sun fa-2x"></i><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" /></div></div>
+            <div class="col-3 tab tab-open red-open-color d-none d-lg-block" onclick="toggle(this, 'present')"><p class="text-center mt-1"><i class="fas fa-home fa-2x"></i> Présentation</p></div>
+            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'career')"><p class="text-center mt-1"><i class="fas fa-briefcase fa-2x"></i> Parcours</p></div>
+            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'skills')"><p class="text-center mt-1"><i class="fas fa-laptop-code fa-2x"></i> Compétences</p></div>
+            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'projects')"><p class="text-center mt-1"><i class="fas fa-images fa-2x"></i> Projets Réalisés</p></div>
+            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'about')"><p class="text-center mt-1"><i class="fas fa-id-card fa-2x"></i> A Propos</div>
+            <div class="col-1 tab tab-open d-none d-lg-block" onclick="theme(this)"><p class="text-center mt-2"><i class="fas fa-sun fa-2x"></i></p></div>
             <div id="present" class="card d-block">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
@@ -72,32 +72,48 @@
             <div id="career" class="card d-none">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
-                        <h1>CAREER</h1>
-                        <h2>- Développeur Web & Web Mobile -</h2>
+                        <h1>Parcours</h1>
+                        <h2>- Formations & Expériences professionnelles -</h2>
                         <hr class="subline" />
                     </div>
-                    <div class="col-md-12 col-lg-10 offset-lg-1">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-4 my-lg-auto mx-auto">
-                                <img id="profil" class="rounded-circle d-block mx-auto img-fluid" src="assets/img/photo.jpg" alt="Photo de Maxime Pageot" />
-                            </div>
-                            <div class="col-md-12 col-lg-3 text-left my-lg-auto my-md-3">
-                                <p class="d-md-inline d-lg-block"><i class="fas fa-map-marked-alt fa-2x mx-2"></i>leeelelellele</p>
-                                <p class="d-md-inline d-lg-block"><i class="fas fa-envelope fa-2x mx-2"></i>hjfdbhjbhj</p>
-                                <p class="d-md-inline d-lg-block"><i class="fas fa-phone fa-2x mx-2"></i>+33 (0) 6 21 29 00 09</p>
-                                <p class="d-md-inline d-lg-block"><i class="fas fa-car fa-2x mx-2"></i>Permis B</p>
-                                <p class="d-md-inline d-lg-block"><a href="assets/img/CV 08072020.pdf" download><i class="fas fa-file-pdf fa-2x mx-2"></i>Télécharger le CV</a></p>
-                            </div>
-                            <div class="col-md-12 col-lg-5 m-auto text-center">
-                                <p>Bonjour je vous souhaite la bienvenue sur mon CV Numérique.</p>
-                                <p>Je m'appelle Maxime Pageot, j'ai 23 ans, et je suis Développeur Web.</p>
-                                <p>Passionné de l'informatique depuis mon enfance, j'ai decidé en 2019 d'entamer ma reconversion.</p>
-                                <p>Issu du monde de l'industrie, cette reconversion m'a permis de m'épanouir dans ma vie professionnelle.</p>
-                                <p>Je consacre de nombreux efforts dans ce métier et j'ai fini par obtenir en 2020 mon Titre de Développeur Web.</p>
-                                <p>De nature curieuse, calme et aimant le travail en équipe, j'aspire à mettre en application mes compétences acquises et à les développer.</p>
-                                <p>Je vous souhaite une agréable visite !</p>
-                            </div>
-                        </div>
+                    <div class="col-12">
+                        <ol>
+                            <li>
+                                <p class="text-center mt-5">BAC S</p>
+                                <span class="dot"></span>
+                                <p class="text-center">2014</p>
+                            </li>
+                            <li>
+                                <p class="text-center">BTS / DUT</p>
+                                <span class="dot"></span>
+                                <p class="text-center">2015</p>
+                            </li>
+                            <li>
+                                <p class="text-center">Licence</p>
+                                <span class="dot"></span>
+                                <p class="text-center">2016</p>
+                            </li>
+                            <li>
+                                <p class="text-center">Master</p>
+                                <span class="dot"></span>
+                                <p class="text-center">2017</p>
+                            </li>
+                            <li>
+                                <p class="text-center">Doctorat</p>
+                                <span class="dot"></span>
+                                <p class="text-center">2018</p>
+                            </li>
+                            <li>
+                                <p class="text-center">Doctorat</p>
+                                <span class="dot"></span>
+                                <p class="text-center">2019</p>
+                            </li>
+                            <li>
+                                <p class="text-center">Doctorat</p>
+                                <span class="dot"></span>
+                                <p class="text-center">2020</p>
+                            </li>
+                        </ol>
                     </div>
                 </div>  
             </div>
@@ -180,7 +196,7 @@
                             <div class="col-md-12 col-lg-3 text-left my-lg-auto my-md-3">
                                 <p class="d-md-inline d-lg-block"><i class="fas fa-map-marked-alt fa-2x mx-2"></i>leeelelellele</p>
                                 <p class="d-md-inline d-lg-block"><i class="fas fa-envelope fa-2x mx-2"></i>hjfdbhjbhj</p>
-                                <p class="d-md-inline d-lg-block"><i class="fas fa-phone fa-2x mx-2"></i>+33 (0) 6 21 29 00 09</p>
+                                <p class="d-md-inline d-lg-block"><i claàss="fas fa-phone fa-2x mx-2"></i>+33 (0) 6 21 29 00 09</p>
                                 <p class="d-md-inline d-lg-block"><i class="fas fa-car fa-2x mx-2"></i>Permis B</p>
                                 <p class="d-md-inline d-lg-block"><a href="assets/img/CV 08072020.pdf" download><i class="fas fa-file-pdf fa-2x mx-2"></i>Télécharger le CV</a></p>
                             </div>
