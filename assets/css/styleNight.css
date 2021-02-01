@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "RaleWay";
+    src: url("../fonts/raleway/Raleway-Medium.ttf") format("truetype");
+}
+body{
+    font-family: "Raleway";
+    background-color: #CFCFCF;
+    border-top: 3px black solid;
+}
+
+/* TABS */
+.tab-close{
+    border-top-left-radius: 2em;
+    padding-top: 5px;
+    border-left: 5px #000000 solid;
+    color: #3F3F3F;
+}
+.tab-close:hover{
+    background:linear-gradient(to right, #3F3F3F, #AFAFAF);
+}
+.tab-open{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    background-color: #000000;
+    color: white;
+}
+.tab-fix{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    background-color: #3F3F3F;
+}
+.red-open-color{
+    border-top: 5px #d66499 solid;
+}
+.red-close-color{
+    border-bottom: 8px #d66499 solid;
+}
+.blue-open-color{
+    border-top: 5px #00ccff solid;
+}
+.blue-close-color{
+    border-bottom: 8px #00ccff solid;
+}
+.green-open-color{
+    border-top: 5px #32862b solid;
+}
+.green-close-color{
+    border-bottom: 8px #32862b solid;
+}
+.purple-open-color{
+    border-top: 5px #ff7dde solid;
+}
+.purple-close-color{
+    border-bottom: 8px #ff7dde solid;
+}
+.orange-open-color{
+    border-top: 5px #ffc400 solid;
+}
+.orange-close-color{
+    border-bottom: 8px #ffc400 solid;
+}
+.card{
+    background-color: #000000;
+    border-bottom-left-radius: 2em;
+    padding-bottom: 3%;
+    height: 90vh;
+    animation-name: card_open;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+.card p{
+    color: white;
+    font-size: 1.2em;
+}
+.subline{
+    border: 3px white solid;
+    width: 85%;
+    margin: auto;
+}
+.top-timeline{
+    border-bottom: 6px black solid;
+    width: 95%;
+    margin: auto;
+}
+.bottom-timeline{
+    border-top: 6px black solid;
+    width: 95%;
+    margin: auto;
+}
+h1,h2{
+    color: white;
+    letter-spacing: 2px;
+}
+@keyframes card_open{
+    0%    {height: 1vh; opacity: 0%; }
+    50%  {height: 90vh; opacity: 75%; }
+    100%    {height: 90vh;}
+}

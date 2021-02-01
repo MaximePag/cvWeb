@@ -2,15 +2,10 @@
     font-family: "RaleWay";
     src: url("../fonts/raleway/Raleway-Medium.ttf") format("truetype");
 }
-.body-day{
+body{
     font-family: "Raleway";
     background-color: #3F3F3F;
     border-top: 3px black solid;
-}
-.body-night{
-    font-family: "Raleway";
-    background-color: #CFCFCF;
-    border-top: 3px lightgrey solid;
 }
 
 /* TABS */
@@ -21,7 +16,7 @@
     color: white;
 }
 .tab-close:hover{
-    background:linear-gradient(to right, #AFAFAF, #3F3F3F);
+    background:linear-gradient(to right, #FFFFFF, #3F3F3F);
 }
 .tab-open{
     border-top-left-radius: 2em;
@@ -34,10 +29,10 @@
     background-color: white;
 }
 .red-open-color{
-    border-top: 5px #ff0000 solid;
+    border-top: 5px #920000 solid;
 }
 .red-close-color{
-    border-bottom: 8px #ff0000 solid;
+    border-bottom: 8px #920000 solid;
 }
 .blue-open-color{
     border-top: 5px #4400ff solid;
@@ -46,10 +41,10 @@
     border-bottom: 8px #4400ff solid;
 }
 .green-open-color{
-    border-top: 5px #02e75a solid;
+    border-top: 5px #006828 solid;
 }
 .green-close-color{
-    border-bottom: 8px #02e75a solid;
+    border-bottom: 8px #006828 solid;
 }
 .purple-open-color{
     border-top: 5px #ac0095 solid;
@@ -99,53 +94,29 @@ h1,h2{
     100%    {height: 90vh;}
 }
 
-  /* ---- Timeline ----
-ol {
-    display: block;
-    margin: 100px;
-    height: 4px;
-    background: #000000;
+.hobbyImg {
+    opacity: 1;
+    transition: .3s ease;
+    background-color: #000000;
 }
-ol::before, ol::after {
-    content: "";
-    position: absolute;
-    top: -8px;
-    display: block;
-    width: 0;
-    height: 0;
-    border-radius: 10px;
-    border: 10px solid #000000;
+.overlayText{
+    text-align: center;
+    opacity: 0;
+    transition: .3s ease;
 }
-ol::after {
-    right: -10px;
-    border: 10px solid transparent;
-    border-right: 0;
-    border-left: 20px solid #000000;
-    border-radius: 3px;
+.hobby:hover .hobbyImg {
+    opacity: 0.5;
+}
+.hobby:hover .overlayText {
+    opacity: 1;
+    z-index: 5;
 }
 
-/* ---- Timeline elements ---- */
-/* li {
-    position: relative;
-    display: inline-block;
-    width: 150px;
-    height: 50px;
-}
-li .diplome {
-    position: absolute;
-    top: -47px;
-    left: 36%;
+.fa-angle-double-left, .fa-angle-double-right{
     color: #000000;
 }
-li .dot {
-    content: "";
-    top: -4px;
-    left: 43%;
-    display: block;
-    width: 6px;
-    height: 6px;
-    border: 6px solid #4400ff;
-    border-radius: 10px;
-    background: #fff;
-    position: absolute;
-}  */
+
+#skills_container{
+    height: 60vh;
+    overflow-y: scroll;
+}

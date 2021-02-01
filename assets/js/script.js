@@ -66,10 +66,21 @@ function toggle(tab, tabType){
     card.classList.remove("d-none");
     card.classList.add("d-block");
 }
-function theme(div){
-    var p = div.childNodes;
-    var pChilds = p[0].childNodes;
-    var icon = pChilds[0];
-    console.log(icon);
-    icon.classList.remove("fa-sun");
+function theme(){
+    var p = document.getElementById("themeIcon");
+    var oldIcon = p.childNodes[0];
+    var newIcon = document.createElement("i");
+    var style = document.getElementById("style");
+    console.log(oldIcon);
+    if(oldIcon.classList.contains("fa-moon")){
+        newIcon.classList.add("fas", "fa-sun", "fa-2x");
+        style.removeAttribute("href");
+        style.setAttribute("href", "assets/css/styleDay.css");
+    }
+    else{
+        newIcon.classList.add("fas", "fa-moon", "fa-2x");
+        style.removeAttribute("href");
+        style.setAttribute("href", "assets/css/styleNight.css");
+    }
+    p.replaceChild(newIcon, oldIcon);
 }
