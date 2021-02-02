@@ -10,7 +10,6 @@ body{
 
 /* TABS */
 .tab-close{
-    border-top-left-radius: 2em;
     padding-top: 5px;
     border-left: 5px #000000 solid;
     color: white;
@@ -19,13 +18,9 @@ body{
     background:linear-gradient(to right, #FFFFFF, #3F3F3F);
 }
 .tab-open{
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
     background-color: white;
 }
 .tab-fix{
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
     background-color: white;
 }
 .red-open-color{
