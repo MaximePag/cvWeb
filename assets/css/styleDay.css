@@ -7,6 +7,11 @@ body{
     background-color: #3F3F3F;
     border-top: 3px black solid;
 }
+a{
+    color: black;
+}
+
+
 
 /* TABS */
 .tab-close{
@@ -114,4 +119,12 @@ h1,h2{
 #skills_container{
     height: 65vh;
     overflow-y: scroll;
+}
+.nav-link{
+    color: black !important;
+    background-color: #bfbfbf !important;
+}
+nav .active{
+    color: white !important;
+    background-color: #ac0095 !important;
 }

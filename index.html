@@ -87,38 +87,134 @@
                         <h2>- Développeur Web & Web Mobile -</h2>
                         <hr class="subline" />
                     </div>
-                    <nav id="skillsNavbar" class="navbar navbar-light bg-light active col-lg-2">
-                        <a class="navbar-brand" href="#">Navbar</a>
+                    <nav id="skills_navbar" class="navbar col-lg-2">
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link" href="#item-1">Item 1</a>
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                                <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                            <a class="nav-link my-2" href="#languages" data-bs-toggle="collapse" data-bs-target="#languages_collapse" aria-expanded="false">Languages</a>
+                            <nav id="languages_collapse" class="nav collapse text-center flex-column">
+                                <a class="nav-link ms-3 my-1" href="#html">HTML 5</a>
+                                <a class="nav-link ms-3 my-1" href="#css">CSS 3</a>
+                                <a class="nav-link ms-3 my-1" href="#js">JavaScript</a>
+                                <a class="nav-link ms-3 my-1" href="#php">PHP 7</a>
+                                <a class="nav-link ms-3 my-1" href="#sql">SQL</a>
+                                <a class="nav-link ms-3 my-1" href="#csharp">C#</a>
                             </nav>
-                            <a class="nav-link" href="#item-2">Item 2</a>
-                            <a class="nav-link" href="#item-3">Item 3</a>
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                            <a class="nav-link my-2" href="#frameworks" data-bs-toggle="collapse" data-bs-target="#frameworks_collapse" aria-expanded="false">Frameworks</a>
+                            <nav id="frameworks_collapse" class="nav nav-pills flex-column collapse">
+                                <a class="nav-link ms-3 my-1" href="#bs">Bootstrap 4 & 5</a>
+                                <a class="nav-link ms-3 my-1" href="#dotnet">.NET</a>
+                            </nav>
+                            <a class="nav-link my-2" href="#others" data-bs-toggle="collapse" data-bs-target="#others_collapse" aria-expanded="false">Outils & Autres compétences</a>
+                            <nav id="others_collapse" class="nav nav-pills flex-column collapse">
+                                <a class="nav-link ms-3 my-1" href="#software">Logiciels</a>
+                                <a class="nav-link ms-3 my-1" href="#os">Systèmes d'Exploitations</a>
                             </nav>
                         </nav>
-                    </nav> 
-                    <div id="skills_container" class="col-lg-10 bg-secondary">
-                        <div data-bs-spy="scroll" data-bs-target="#skillsNavbar" data-bs-offset="0" tabindex="0">
-                            <h4 id="item-1">Item 1</h4>
-                            <p>Jelly beans marshmallow fruitcake jujubes. Bear claw caramels gummi bears cotton candy. Cotton candy sweet icing lemon drops. Cake gummies cheesecake pastry danish. Lemon drops pie lemon drops pie pie. Halvah sugar plum tart jelly-o lemon drops topping. Cupcake muffin croissant chupa chups cookie powder. Caramels oat cake jelly dragée gummies jelly beans lemon drops. Biscuit cupcake lollipop bear claw dragée brownie apple pie jujubes liquorice. Cheesecake chocolate chocolate bar cake jelly beans fruitcake gummi bears. Biscuit croissant pudding chocolate jelly cookie. Marzipan tart apple pie cake donut gingerbread cheesecake lemon drops.</p>
-                            <h5 id="item-1-1">Item 1-1</h5>
-                            <p>Jelly beans marshmallow fruitcake jujubes. Bear claw caramels gummi bears cotton candy. Cotton candy sweet icing lemon drops. Cake gummies cheesecake pastry danish. Lemon drops pie lemon drops pie pie. Halvah sugar plum tart jelly-o lemon drops topping. Cupcake muffin croissant chupa chups cookie powder. Caramels oat cake jelly dragée gummies jelly beans lemon drops. Biscuit cupcake lollipop bear claw dragée brownie apple pie jujubes liquorice. Cheesecake chocolate chocolate bar cake jelly beans fruitcake gummi bears. Biscuit croissant pudding chocolate jelly cookie. Marzipan tart apple pie cake donut gingerbread cheesecake lemon drops.</p>
-                            <h5 id="item-1-2">Item 1-2</h5>
-                            <p>Jelly beans marshmallow fruitcake jujubes. Bear claw caramels gummi bears cotton candy. Cotton candy sweet icing lemon drops. Cake gummies cheesecake pastry danish. Lemon drops pie lemon drops pie pie. Halvah sugar plum tart jelly-o lemon drops topping. Cupcake muffin croissant chupa chups cookie powder. Caramels oat cake jelly dragée gummies jelly beans lemon drops. Biscuit cupcake lollipop bear claw dragée brownie apple pie jujubes liquorice. Cheesecake chocolate chocolate bar cake jelly beans fruitcake gummi bears. Biscuit croissant pudding chocolate jelly cookie. Marzipan tart apple pie cake donut gingerbread cheesecake lemon drops.</p>
-                            <h4 id="item-2">Item 2</h4>
-                            <p>...</p>
-                            <h4 id="item-3">Item 3</h4>
-                            <p>...</p>
-                            <h5 id="item-3-1">Item 3-1</h5>
-                            <p>...</p>
-                            <h5 id="item-3-2">Item 3-2</h5>
-                            <p>...</p>
+                    </nav>
+                    <div id="skills_container" class="col-lg-10" data-bs-spy="scroll" data-bs-target="#skills_navbar" data-bs-offset="200" tabindex="0">
+                        <h3 id="languages" class="text-center">Langages informatiques</h3>
+                        <hr class="subline mb-3">
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/html5.png" alt="Logo HTML 5">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="html">HyperText Markup Language 5</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/css3.png" alt="Logo CSS 3">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="css">Cascade Style Sheets 3</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/js.png" alt="Logo JavaScript">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="js">JavaScript</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/php.png" alt="Logo PHP 7">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="php">PHP HyperText PreProcessor</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/sql.png" alt="Logo non officiel SQL">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="sql">Structured Query Language</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/csharp.png" alt="Logo C Sharp">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="csharp">C Sharp</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
+                        </div>
+                        <h3 id="frameworks" class="text-center">Frameworks</h3>
+                        <hr class="subline mb-3">
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/bootstrap.png" alt="Logo Bootstrap 5">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="bs">Bootstrap 4 & 5 (Framework CSS)</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/dotnet.png" alt="Logo .NET Framework">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="dotnet">.NET (Framework C#)</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
+                        </div>
+                        <h3 id="software" class="text-center">Logiciels Utilisés</h3>
+                        <hr class="subline mb-3">
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/bootstrap.png" alt="Logo Bootstrap 5">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="bs">Logiciels Utilisés</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
+                        </div>
+                        <h3 id="os" class="text-center">Systèmes d'exploitations</h3>
+                        <hr class="subline mb-3">
+                        <div class="row mb-5">
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/windows.png" alt="Logo Windows">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="dotnet">Windows</h4>
+                                <p></p>
+                            </div>
+                            <div class="col-lg-3">
+                                <img class="img-fluid d-block m-auto" src="assets/img/tux.png" alt="Tux et logo de Ubuntu">
+                            </div>
+                            <div class="col-lg-9">
+                                <h4 id="dotnet">Linux</h4>
+                                <p>dfjkvbhjbvhjsd</p>
+                            </div>
                         </div>
                     </div>
                 </div>  
