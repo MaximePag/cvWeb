@@ -128,3 +128,7 @@ nav .active{
     color: white !important;
     background-color: #ac0095 !important;
 }
+
+.star-color{
+    color: goldenrod;
+}
