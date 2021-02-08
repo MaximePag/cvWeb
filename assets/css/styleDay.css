@@ -60,7 +60,6 @@ a{
 }
 .card{
     background-color: #FFFFFF;
-    border-bottom-left-radius: 2em;
     padding-bottom: 3%;
     height: 90vh;
     animation-name: card_open;
@@ -77,23 +76,18 @@ a{
 }
 .top-timeline{
     border-bottom: 6px black solid;
-    width: 95%;
-    margin: auto;
 }
 .bottom-timeline{
     border-top: 6px black solid;
-    width: 95%;
-    margin: auto;
 }
 h1,h2{
     letter-spacing: 2px;
 }
-@keyframes card_open{
+/* @keyframes card_open{
     0%    {height: 1vh; opacity: 0%; }
     50%  {height: 90vh; opacity: 20%; }
     100%    {height: 90vh;}
-}
-
+} */
 .hobbyImg {
     opacity: 1;
     transition: .3s ease;
@@ -116,7 +110,7 @@ h1,h2{
     color: #000000;
 }
 
-#skills_container{
+#skills_container, #career_container{
     height: 65vh;
     overflow-y: scroll;
 }
@@ -131,4 +125,13 @@ nav .active{
 
 .star-color{
     color: goldenrod;
+}
+.timeline-courses{
+    border-right: 15px #29ABE2 solid;
+}
+.timeline-work{
+    border-right: 15px #d45500 solid;
+}
+.timeline-school{
+    border-right: 15px #00aa17 solid;
 }

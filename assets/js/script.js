@@ -36,7 +36,8 @@ function toggle(tab, tabType){
         tab.classList.add("blue-open-color");
     }
     if (tabType == 'skills'){
-        var card = document.getElementById("skills");for (i = 0; i < 5; i++){
+        var card = document.getElementById("skills");
+        for (i = 0; i < 5; i++){
             allTabs[i].classList.add("purple-close-color");
         }
         tab.classList.remove("purple-close-color");
@@ -84,3 +85,23 @@ function theme(){
     }
     p.replaceChild(newIcon, oldIcon);
 }
+
+// Modales cestion career
+var careerModal = document.getElementById('careerModal')
+careerModal.addEventListener('show.bs.modal', function (event) {
+    let button = event.relatedTarget
+    let modalAttr = button.getAttribute('data-bs-modal-type');
+    let modalTitle = document.getElementById("modalTitle");
+    let modalBody = document.getElementById("modalBody");
+    let modalFoot = document.getElementById("modalFoot");
+    if (modalAttr == 'csharp'){
+        modalTitle.innerHTML = "yay";
+        modalBody.innerHTML = "wow";
+        modalFoot.innerHTML = "lel";    
+    }
+    if (modalAttr == 'dwwm'){
+        modalTitle.innerHTML = "gneugneu";
+        modalBody.innerHTML = "bleubleu";
+        modalFoot.innerHTML = "maaaaaaaaaaah";    
+    }
+})

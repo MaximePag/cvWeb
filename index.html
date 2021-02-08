@@ -71,12 +71,183 @@
             </div>
             <div id="career" class="card d-none">
                 <div class="row">
-                    <div class="col-12 text-center mb-5">
+                    <div class="col-12 text-center mb-1">
                         <h1>Parcours</h1>
                         <h2>- Formations & Expériences professionnelles -</h2>
                         <hr class="subline" />
                     </div>
-                    <div class="col-12">
+                    <nav id="navbar-example2" class="navbar navbar-light">
+                        <ul class="nav nav-pills mx-auto">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#fat">2021</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#mdo">2020</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#fat">2019</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#mdo">2018</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#fat">2017</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#mdo">2016</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#fat">2015</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="#mdo">2014</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="modal fade" id="careerModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTitle">Titre Indisponible</h5>
+                                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle fa-2x"></i></button>
+                                </div>
+                                <div class="modal-body" id="modalBody">Texte Indisponible</div>
+                                <div class="modal-footer" id="modalFoot">Texte Indisponible</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="career_container" class="col-lg-12 row">
+                        <div class="col-lg-10 offset-lg-1 row pt-5">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
+                            </div>
+                            <div class="col-lg-8 timeline-courses">
+                                <p><i class="fas fa-book"></i> Formation C# (.NET)</p>
+                                <p><i class="far fa-calendar-alt"></i> Janvier 2021 - Avril 2021 (400 h)</p>
+                                <p><i class="fas fa-map-marker-alt"></i> École Numérique La Manu à Noyon (60)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="csharp">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
+                            </div>
+                            <div class="col-lg-8 timeline-courses">
+                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Développeur Web & Web Mobile (Niveau 5 UE)</p>
+                                <p><i class="far fa-calendar-alt"></i> Mars 2020 - Septembre 2020 (805 h)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> École Numérique La Manu à Noyon (60)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/deceuninck.jpg" alt="Logo de Deceuninck" />
+                            </div>
+                            <div class="col-lg-8 timeline-work">
+                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Conducteur de ligne d'extrusion de PVC</p>
+                                <p><i class="far fa-calendar-alt"></i> Juillet 2018 - Décembre 2019 (17 mois)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Deceuninck à Roye (80)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/promeo.jpg" alt="Logo de ProMeo" />
+                            </div>
+                            <div class="col-lg-8 timeline-courses">
+                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Conducteur de ligne et de machines automatisées</p>
+                                <p><i class="far fa-calendar-alt"></i> Juillet 2018 - Mai 2018 (480 h)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Centre de formation ProMeo à Amiens (80)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/inter.png" alt="Logo de Intermarché" />
+                            </div>
+                            <div class="col-lg-8 timeline-work">
+                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Préparateur de commandes</p>
+                                <p><i class="far fa-calendar-alt"></i> Mai 2018 - Juillet 2018 (2 mois)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Base Intermarché à Chaulnes (80)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/matines.png" alt="Logo de Matines" />
+                            </div>
+                            <div class="col-lg-8 timeline-work">
+                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Manutentionnaire</p>
+                                <p><i class="far fa-calendar-alt"></i> Décembre 2017 - Avril 2018 (5 mois)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Matines à Montdidier (80)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/saison.jpg" alt="Photo de saisonniers" />
+                            </div>
+                            <div class="col-lg-8 timeline-work">
+                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Saisonnier</p>
+                                <p><i class="far fa-calendar-alt"></i> Juillet 2017 - Octobre 2017 (4 mois)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Thierry Peugniez SARL à Gruny (80)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/plombier.jpg" alt="Photo d'un plombier" />
+                            </div>
+                            <div class="col-lg-8 timeline-work">
+                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Plombier-Manutentionnaire</p>
+                                <p><i class="far fa-calendar-alt"></i> Janvier 2017 - Avril 2017 (4 mois)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Qualichauff Services à Péronne (80)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
+                            </div>
+                            <div class="col-lg-8 timeline-school">
+                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Bac Pro Maintenance des Équipements Industriels</p>
+                                <p><i class="far fa-calendar-alt"></i> Juillet 2015 - Juillet 2016 (10 mois)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Lycée Jean Racine à Montdidier (80)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
+                            </div>
+                            <div class="col-lg-8 timeline-school">
+                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> BEP Maintenance des Produits et Équipements Industriels</p>
+                                <p><i class="far fa-calendar-alt"></i> Juillet 2014 - Juillet 2015 (10 mois)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Lycée Jean Racine à Montdidier (80)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <hr class="subline my-5" />
+                        <div class="col-lg-10 offset-lg-1 row">
+                            <div class="col-lg-4">
+                                <img class="img-fluid w-50 rounded-circle" src="assets/img/lmichel.jpg" alt="Logo du Collège Louise Michel de Roye" />
+                            </div>
+                            <div class="col-lg-8 timeline-school">
+                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Brevet des collèges</p>
+                                <p><i class="far fa-calendar-alt"></i> Juillet 2011 - Juillet 2012 (10 mois)</p>
+                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Lycée Jean Racine à Montdidier (80)</p>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
                     </div>
                 </div>  
             </div>
@@ -124,8 +295,7 @@
                             <div class="col-lg-9">
                                 <h4 id="html"><a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank">HyperText Markup Language 5 <i class="fas fa-external-link-alt"></i></a></h4>
                                 <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
-                                <p>Bonne connaissances des bonnes pratiques HTML relatives à l'accéssibilité et aux SEO</p>
-                                <p></p>
+                                <p>Connaissances des bonnes pratiques HTML relatives à l'accessibilité et au SEO</p>
                             </div>
                         </div>
                         <div class="row mb-5">
