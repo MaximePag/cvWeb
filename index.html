@@ -11,25 +11,26 @@
     <link id="style" rel="stylesheet" href="assets/css/styleDay.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-lg-none">
+    <nav id="responsive_navbar" class="navbar navbar-expand-lg navbar-dark d-lg-none fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">CV - Maxime Pageot</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#responsive_collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars"></i></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="responsive_collapse">
                 <ul class="navbar-nav text-center">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Parcours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Compétences</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projets</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">idk</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">idk 2</a></li>
+                    <li class="nav-item my-1"><a class="nav-link" id="present_anchor" href="#present"><i class="fas fa-home fa-1x"></i> Accueil</a></li>
+                    <li class="nav-item my-1"><a class="nav-link" id="career_anchor" href="#career"><i class="fas fa-briefcase fa-1x"></i> Parcours</a></li>
+                    <li class="nav-item my-1"><a class="nav-link" id="skills_anchor" href="#"><i class="fas fa-laptop-code fa-1x"></i> Compétences</a></li>
+                    <li class="nav-item my-1"><a class="nav-link" id="projects_anchor" href="#"><i class="fas fa-images fa-1x"></i> Projets</a></li>
+                    <li class="nav-item my-1"><a class="nav-link" id="about_anchor" href="#"><i class="fas fa-id-card fa-1x"></i> À Propos</a></li>
+                    <li class="nav-item my-1"><a class="nav-link" id="theme_anchor" href="#"><i id="themeIcon" class="fas fa-sun fa-2x"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <section class="container-fluid">
+        <span id="year_2021"></span>
         <div class="row">
             <div class="col-3 tab tab-open red-open-color d-none d-lg-block" onclick="toggle(this, 'present')"><p class="text-center mt-1"><i class="fas fa-home fa-2x"></i> Présentation</p></div>
             <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'career')"><p class="text-center mt-1"><i class="fas fa-briefcase fa-2x"></i> Parcours</p></div>
@@ -76,31 +77,31 @@
                         <h2>- Formations & Expériences professionnelles -</h2>
                         <hr class="subline" />
                     </div>
-                    <nav id="navbar-example2" class="navbar navbar-light">
+                    <nav id="career_navbar" class="navbar navbar-light d-none d-md-flex">
                         <ul class="nav nav-pills mx-auto">
-                            <li class="nav-item mx-3">
-                                <a class="nav-link" href="#fat">2021</a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link career-link active" href="#year_2021">2021</a>
                             </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link" href="#mdo">2020</a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link career-link" href="#year_2020">2020</a>
                             </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link" href="#fat">2019</a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link career-link" href="#year_2019">2019</a>
                             </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link" href="#mdo">2018</a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link career-link" href="#year_2018">2018</a>
                             </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link" href="#fat">2017</a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link career-link" href="#year_2017">2017</a>
                             </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link" href="#mdo">2016</a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link career-link" href="#year_2016">2016</a>
                             </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link" href="#fat">2015</a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link career-link" href="#year_2015">2015</a>
                             </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link" href="#mdo">2014</a>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link career-link" href="#year_2014">2014</a>
                             </li>
                         </ul>
                     </nav>
@@ -116,10 +117,11 @@
                             </div>
                         </div>
                     </div>
-                    <div id="career_container" class="col-lg-12 row">
+                    <div id="career_container" class="col-lg-12 row g-0" data-bs-spy="scroll" data-bs-target="#career_navbar" data-bs-offset="10" tabindex="0">
+                        <span id="year_2020"></span>
                         <div class="col-lg-10 offset-lg-1 row pt-5">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
+                            <div class="col-lg-4 mb-lg-0 mb-5">
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
                             </div>
                             <div class="col-lg-8 timeline-courses">
                                 <p><i class="fas fa-book"></i> Formation C# (.NET)</p>
@@ -128,10 +130,11 @@
                                 <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="csharp">En savoir <i class="fas fa-plus"></i></button>
                             </div>
                         </div>
+                        <span id="year_2019"></span>
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
                             </div>
                             <div class="col-lg-8 timeline-courses">
                                 <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Développeur Web & Web Mobile (Niveau 5 UE)</p>
@@ -140,10 +143,11 @@
                                 <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
                             </div>
                         </div>
+                        <span id="year_2018"></span>
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/deceuninck.jpg" alt="Logo de Deceuninck" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/deceuninck.jpg" alt="Logo de Deceuninck" />
                             </div>
                             <div class="col-lg-8 timeline-work">
                                 <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Conducteur de ligne d'extrusion de PVC</p>
@@ -155,7 +159,7 @@
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/promeo.jpg" alt="Logo de ProMeo" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/promeo.jpg" alt="Logo de ProMeo" />
                             </div>
                             <div class="col-lg-8 timeline-courses">
                                 <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Conducteur de ligne et de machines automatisées</p>
@@ -164,10 +168,11 @@
                                 <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
                             </div>
                         </div>
+                        <span id="year_2017"></span>
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/inter.png" alt="Logo de Intermarché" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/inter.png" alt="Logo de Intermarché" />
                             </div>
                             <div class="col-lg-8 timeline-work">
                                 <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Préparateur de commandes</p>
@@ -179,7 +184,7 @@
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/matines.png" alt="Logo de Matines" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/matines.png" alt="Logo de Matines" />
                             </div>
                             <div class="col-lg-8 timeline-work">
                                 <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Manutentionnaire</p>
@@ -191,7 +196,7 @@
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/saison.jpg" alt="Photo de saisonniers" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/saison.jpg" alt="Photo de saisonniers" />
                             </div>
                             <div class="col-lg-8 timeline-work">
                                 <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Saisonnier</p>
@@ -200,10 +205,11 @@
                                 <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
                             </div>
                         </div>
+                        <span id="year_2016"></span>
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/plombier.jpg" alt="Photo d'un plombier" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/plombier.jpg" alt="Photo d'un plombier" />
                             </div>
                             <div class="col-lg-8 timeline-work">
                                 <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Plombier-Manutentionnaire</p>
@@ -212,10 +218,11 @@
                                 <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
                             </div>
                         </div>
+                        <span id="year_2015"></span>
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
                             </div>
                             <div class="col-lg-8 timeline-school">
                                 <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Bac Pro Maintenance des Équipements Industriels</p>
@@ -224,10 +231,11 @@
                                 <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
                             </div>
                         </div>
+                        <span id="year_2014"></span>
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
                             </div>
                             <div class="col-lg-8 timeline-school">
                                 <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> BEP Maintenance des Produits et Équipements Industriels</p>
@@ -239,7 +247,7 @@
                         <hr class="subline my-5" />
                         <div class="col-lg-10 offset-lg-1 row">
                             <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle" src="assets/img/lmichel.jpg" alt="Logo du Collège Louise Michel de Roye" />
+                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lmichel.jpg" alt="Logo du Collège Louise Michel de Roye" />
                             </div>
                             <div class="col-lg-8 timeline-school">
                                 <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Brevet des collèges</p>
@@ -259,29 +267,29 @@
                         <hr class="subline" />
                     </div>
                     <nav id="skills_navbar" class="navbar col-lg-2">
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link my-2" href="#languages" data-bs-toggle="collapse" data-bs-target="#languages_collapse" aria-expanded="false">Languages</a>
+                        <nav class="nav nav-pills flex-column d-none d-md-flex">
+                            <a class="nav-link skills-link my-2" href="#languages" data-bs-toggle="collapse" data-bs-target="#languages_collapse" aria-expanded="false">Languages</a>
                             <nav id="languages_collapse" class="nav collapse text-center flex-column">
-                                <a class="nav-link ms-3 my-1" href="#html">HTML 5</a>
-                                <a class="nav-link ms-3 my-1" href="#css">CSS 3</a>
-                                <a class="nav-link ms-3 my-1" href="#js">JavaScript</a>
-                                <a class="nav-link ms-3 my-1" href="#php">PHP 7</a>
-                                <a class="nav-link ms-3 my-1" href="#sql">SQL</a>
-                                <a class="nav-link ms-3 my-1" href="#csharp">C#</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#html">HTML 5</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#css">CSS 3</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#js">JavaScript</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#php">PHP 7</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#sql">SQL</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#csharp">C#</a>
                             </nav>
-                            <a class="nav-link my-2" href="#frameworks" data-bs-toggle="collapse" data-bs-target="#frameworks_collapse" aria-expanded="false">Frameworks</a>
+                            <a class="nav-link skills-link my-2" href="#frameworks" data-bs-toggle="collapse" data-bs-target="#frameworks_collapse" aria-expanded="false">Frameworks</a>
                             <nav id="frameworks_collapse" class="nav nav-pills flex-column collapse">
-                                <a class="nav-link ms-3 my-1" href="#bs">Bootstrap 4 & 5</a>
-                                <a class="nav-link ms-3 my-1" href="#dotnet">.NET</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#bs">Bootstrap 4 & 5</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#dotnet">.NET</a>
                             </nav>
-                            <a class="nav-link my-2" href="#cms" data-bs-toggle="collapse" data-bs-target="#cms_collapse" aria-expanded="false">Système de Gestion de Contenu</a>
+                            <a class="nav-link skills-link my-2" href="#cms" data-bs-toggle="collapse" data-bs-target="#cms_collapse" aria-expanded="false">Système de Gestion de Contenu</a>
                             <nav id="cms_collapse" class="nav nav-pills flex-column collapse">
                                 <a class="nav-link ms-3 my-1" href="#wp">WordPress</a>
                             </nav>
-                            <a class="nav-link my-2" href="#others" data-bs-toggle="collapse" data-bs-target="#others_collapse" aria-expanded="false">Outils & Autres compétences</a>
+                            <a class="nav-link skills-link my-2" href="#others" data-bs-toggle="collapse" data-bs-target="#others_collapse" aria-expanded="false">Outils & Autres compétences</a>
                             <nav id="others_collapse" class="nav nav-pills flex-column collapse">
-                                <a class="nav-link ms-3 my-1" href="#software">Logiciels</a>
-                                <a class="nav-link ms-3 my-1" href="#os">Systèmes d'Exploitations</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#software">Logiciels</a>
+                                <a class="nav-link skills-link ms-3 my-1" href="#os">Systèmes d'Exploitations</a>
                             </nav>
                         </nav>
                     </nav>

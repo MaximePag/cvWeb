@@ -89,11 +89,11 @@ function theme(){
 // Modales cestion career
 var careerModal = document.getElementById('careerModal')
 careerModal.addEventListener('show.bs.modal', function (event) {
-    let button = event.relatedTarget
-    let modalAttr = button.getAttribute('data-bs-modal-type');
-    let modalTitle = document.getElementById("modalTitle");
-    let modalBody = document.getElementById("modalBody");
-    let modalFoot = document.getElementById("modalFoot");
+    var button = event.relatedTarget
+    var modalAttr = button.getAttribute('data-bs-modal-type');
+    var modalTitle = document.getElementById("modalTitle");
+    var modalBody = document.getElementById("modalBody");
+    var modalFoot = document.getElementById("modalFoot");
     if (modalAttr == 'csharp'){
         modalTitle.innerHTML = "yay";
         modalBody.innerHTML = "wow";
@@ -105,3 +105,63 @@ careerModal.addEventListener('show.bs.modal', function (event) {
         modalFoot.innerHTML = "maaaaaaaaaaah";    
     }
 })
+
+
+document.getElementById('present_anchor').addEventListener('click',() => {
+    var allCards = document.getElementsByClassName("card");
+    for (i = 0; i < 5; i++){
+        allCards[i].classList.remove("d-block");
+        allCards[i].classList.add("d-none");
+    }
+    document.getElementById('present').classList.remove("d-none");
+    document.getElementById('present').classList.add("d-block");
+    document.getElementById('responsive_navbar').style.borderBottom = "5px #920000 solid";
+});
+
+document.getElementById('career_anchor').addEventListener('click',() => {
+    var allCards = document.getElementsByClassName("card");
+    for (i = 0; i < 5; i++){
+        allCards[i].classList.remove("d-block");
+        allCards[i].classList.add("d-none");
+    }
+    document.getElementById('career').classList.remove("d-none");
+    document.getElementById('career').classList.add("d-block");
+    document.getElementById('responsive_navbar').style.borderBottom = "5px #4400ff solid";
+});
+
+document.getElementById('skills_anchor').addEventListener('click',() => {
+    var allCards = document.getElementsByClassName("card");
+    for (i = 0; i < 5; i++){
+        allCards[i].classList.remove("d-block");
+        allCards[i].classList.add("d-none");
+    }
+    document.getElementById('skills').classList.remove("d-none");
+    document.getElementById('skills').classList.add("d-block");
+    document.getElementById('responsive_navbar').style.borderBottom = "5px #AC0095 solid";
+});
+
+document.getElementById('projects_anchor').addEventListener('click',() => {
+    var allCards = document.getElementsByClassName("card");
+    for (i = 0; i < 5; i++){
+        allCards[i].classList.remove("d-block");
+        allCards[i].classList.add("d-none");
+    }
+    document.getElementById('projects').classList.remove("d-none");
+    document.getElementById('projects').classList.add("d-block");
+    document.getElementById('responsive_navbar').style.borderBottom = "5px #006828 solid";
+});
+
+document.getElementById('about_anchor').addEventListener('click',() => {
+    var allCards = document.getElementsByClassName("card");
+    for (i = 0; i < 5; i++){
+        allCards[i].classList.remove("d-block");
+        allCards[i].classList.add("d-none");
+    }
+    document.getElementById('about').classList.remove("d-none");
+    document.getElementById('about').classList.add("d-block");
+    document.getElementById('responsive_navbar').style.borderBottom = "5px #D45500 solid";
+});
+
+document.getElementById('theme_anchor').addEventListener('click',() => {
+    theme();
+});

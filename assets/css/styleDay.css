@@ -53,10 +53,10 @@ a{
     border-bottom: 8px #ac0095 solid;
 }
 .orange-open-color{
-    border-top: 5px #ffc400 solid;
+    border-top: 5px #D45500 solid;
 }
 .orange-close-color{
-    border-bottom: 8px #ffc400 solid;
+    border-bottom: 8px #D45500 solid;
 }
 .card{
     background-color: #FFFFFF;
@@ -114,13 +114,13 @@ h1,h2{
     height: 65vh;
     overflow-y: scroll;
 }
-.nav-link{
-    color: black !important;
-    background-color: #bfbfbf !important;
-}
-nav .active{
+.skills-link.active{
     color: white !important;
     background-color: #ac0095 !important;
+}
+.career-link.active{
+    color: white !important;
+    background-color: #4400ff !important;
 }
 
 .star-color{
@@ -134,4 +134,66 @@ nav .active{
 }
 .timeline-school{
     border-right: 15px #00aa17 solid;
+}
+@media (min-width: 1024px){
+    .nav-link{
+        color: black !important;
+        background-color: #bfbfbf !important;
+    }
+}
+@media (max-width: 1024px){
+    #present, #career, #skills, #projects, #about{
+        padding-top: 9vh;
+    }
+    .card{
+        background-color: #FFFFFF;
+        padding-bottom: 3%;
+        height: auto;
+        animation-name: card_open;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+    }
+    #responsive_navbar{
+        background-color: #3F3F3F;
+        border-bottom: 5px #920000 solid;
+    }
+    #skills_container, #career_container{
+        height: auto;
+    }
+    #present_anchor{
+        color: #FFFFFF;
+        background-color: #5F5F5F;
+        border-right: 4px #920000 solid;
+        border-bottom: 2px #920000 solid;
+        border-top-left-radius: 20px;
+    }
+    #career_anchor{
+        color: #FFFFFF;
+        background-color: #5F5F5F;
+        border-right: 4px #4400ff solid;
+        border-bottom: 2px #4400ff solid;
+        border-top-left-radius: 20px;
+    }
+    #skills_anchor{
+        color: #FFFFFF;
+        background-color: #5F5F5F;
+        border-right: 4px #AC0095 solid;
+        border-bottom: 2px #AC0095 solid;
+        border-top-left-radius: 20px;
+    }
+    #projects_anchor{
+        color: #FFFFFF;
+        background-color: #5F5F5F;
+        border-right: 4px #006828 solid;
+        border-bottom: 2px #006828 solid;
+        border-top-left-radius: 20px;
+    }
+    #about_anchor{
+        color: #FFFFFF;
+        background-color: #5F5F5F;
+        border-right: 4px #D45500 solid;
+        border-bottom: 2px #D45500 solid;
+        border-top-left-radius: 20px;
+    }
+    
 }
