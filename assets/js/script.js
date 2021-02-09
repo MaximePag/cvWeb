@@ -93,11 +93,10 @@ careerModal.addEventListener('show.bs.modal', function (event) {
     var modalAttr = button.getAttribute('data-bs-modal-type');
     var modalTitle = document.getElementById("modalTitle");
     var modalBody = document.getElementById("modalBody");
+    var modalCalendar = document.getElementById("modalCalendar");
     var modalFoot = document.getElementById("modalFoot");
     if (modalAttr == 'csharp'){
-        modalTitle.innerHTML = "yay";
-        modalBody.innerHTML = "wow";
-        modalFoot.innerHTML = "lel";    
+        modalTitle.writeln("bleubleu");
     }
     if (modalAttr == 'dwwm'){
         modalTitle.innerHTML = "gneugneu";

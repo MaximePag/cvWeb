@@ -19,12 +19,12 @@
             </button>
             <div class="collapse navbar-collapse" id="responsive_collapse">
                 <ul class="navbar-nav text-center">
-                    <li class="nav-item my-1"><a class="nav-link" id="present_anchor" href="#present"><i class="fas fa-home fa-1x"></i> Accueil</a></li>
-                    <li class="nav-item my-1"><a class="nav-link" id="career_anchor" href="#career"><i class="fas fa-briefcase fa-1x"></i> Parcours</a></li>
-                    <li class="nav-item my-1"><a class="nav-link" id="skills_anchor" href="#"><i class="fas fa-laptop-code fa-1x"></i> Compétences</a></li>
-                    <li class="nav-item my-1"><a class="nav-link" id="projects_anchor" href="#"><i class="fas fa-images fa-1x"></i> Projets</a></li>
-                    <li class="nav-item my-1"><a class="nav-link" id="about_anchor" href="#"><i class="fas fa-id-card fa-1x"></i> À Propos</a></li>
-                    <li class="nav-item my-1"><a class="nav-link" id="theme_anchor" href="#"><i id="themeIcon" class="fas fa-sun fa-2x"></i></a></li>
+                    <li class="nav-item my-1" data-bs-toggle="collapse" data-bs-target="#responsive_collapse"><a class="nav-link" id="present_anchor" href="#present"><i class="fas fa-home fa-1x"></i> Accueil</a></li>
+                    <li class="nav-item my-1" data-bs-toggle="collapse" data-bs-target="#responsive_collapse"><a class="nav-link" id="career_anchor" href="#career"><i class="fas fa-briefcase fa-1x"></i> Parcours</a></li>
+                    <li class="nav-item my-1" data-bs-toggle="collapse" data-bs-target="#responsive_collapse"><a class="nav-link" id="skills_anchor" href="#"><i class="fas fa-laptop-code fa-1x"></i> Compétences</a></li>
+                    <li class="nav-item my-1" data-bs-toggle="collapse" data-bs-target="#responsive_collapse"><a class="nav-link" id="projects_anchor" href="#"><i class="fas fa-images fa-1x"></i> Projets</a></li>
+                    <li class="nav-item my-1" data-bs-toggle="collapse" data-bs-target="#responsive_collapse"><a class="nav-link" id="about_anchor" href="#"><i class="fas fa-id-card fa-1x"></i> À Propos</a></li>
+                    <li class="nav-item my-1"><a class="nav-link" id="theme_anchor"><i id="themeIcon" class="fas fa-sun fa-2x"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -55,7 +55,7 @@
                                 <p class="d-md-inline d-lg-block"><i class="fas fa-envelope fa-2x mx-2"></i>max_p@live.fr</p>
                                 <p class="d-md-inline d-lg-block"><i class="fas fa-phone fa-2x mx-2"></i>+33 (0) 6 21 29 00 09</p>
                                 <p class="d-md-inline d-lg-block"><i class="fas fa-car fa-2x mx-2"></i>Permis B</p>
-                                <p class="d-md-inline d-lg-block"><a href="assets/img/CV 08072020.pdf" download><i class="fas fa-file-pdf fa-2x mx-2"></i>Télécharger le CV</a></p>
+                                <p class="d-md-inline d-lg-block"><a href="assets/img/CV29012021.pdf" download><i class="fas fa-file-pdf fa-2x mx-2"></i>Télécharger le CV</a></p>
                             </div>
                             <div class="col-md-12 col-lg-5 m-auto text-center">
                                 <p>Bonjour je vous souhaite la bienvenue sur mon CV Numérique.</p>
@@ -109,15 +109,18 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="modalTitle">Titre Indisponible</h5>
+                                    <h5 class="modal-title" id="modalTitle"> Titre Indisponible</h5>
                                     <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle fa-2x"></i></button>
                                 </div>
-                                <div class="modal-body" id="modalBody">Texte Indisponible</div>
+                                <div class="modal-body" id="modalBody">
+                                    <p id="modalCalendar"><i class="far fa-calendar-alt"></i> </p>
+                                    <p><i class="fas fa-map-marker-alt"></i> </p>
+                                </div>
                                 <div class="modal-footer" id="modalFoot">Texte Indisponible</div>
                             </div>
                         </div>
                     </div>
-                    <div id="career_container" class="col-lg-12 row g-0" data-bs-spy="scroll" data-bs-target="#career_navbar" data-bs-offset="10" tabindex="0">
+                    <div id="career_container" class="col-lg-12 row g-0" data-bs-spy="scroll" data-bs-target="#career_navbar" data-bs-offset="0" tabindex="0">
                         <span id="year_2020"></span>
                         <div class="col-lg-10 offset-lg-1 row pt-5">
                             <div class="col-lg-4 mb-lg-0 mb-5">
@@ -137,7 +140,7 @@
                                 <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
                             </div>
                             <div class="col-lg-8 timeline-courses">
-                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Développeur Web & Web Mobile (Niveau 5 UE)</p>
+                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Développeur Web & Web Mobile</p>
                                 <p><i class="far fa-calendar-alt"></i> Mars 2020 - Septembre 2020 (805 h)</p>
                                 <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> École Numérique La Manu à Noyon (60)</p>
                                 <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
@@ -452,13 +455,11 @@
                         <h2>- Développeur Web & Web Mobile -</h2>
                         <hr class="subline" />
                     </div>
-                    <div class="col-1">
-                        <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
-                            <span class="fas fa-angle-double-left fa-3x" aria-hidden="true"></span>
-                            <span class="visually-hidden">Précédent</span>
-                        </a>
-                    </div>
-                    <div id="projectCarousel" class="col-10 carousel slide" data-bs-ride="carousel">
+                    <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
+                        <span class="fas fa-angle-double-left fa-3x" aria-hidden="true"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </a>
+                    <div id="projectCarousel" class="col-10 offset-1 carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="5000">
                                 <div class="row">
@@ -488,12 +489,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-1">
-                        <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
-                            <span class="fas fa-angle-double-right fa-3x" aria-hidden="true"></span>
-                            <span class="visually-hidden">Suivant</span>
-                        </a>
-                    </div>
+                    <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
+                        <span class="fas fa-angle-double-right fa-3x" aria-hidden="true"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </a>
                 </div>  
             </div>
             <div id="about" class="card d-none">

@@ -160,6 +160,9 @@ h1,h2{
     #skills_container, #career_container{
         height: auto;
     }
+    #projects{
+        min-height: 120vh;
+    }
     #present_anchor{
         color: #FFFFFF;
         background-color: #5F5F5F;
