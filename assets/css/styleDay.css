@@ -62,7 +62,7 @@ a{
     background-color: #FFFFFF;
     padding-bottom: 3%;
     height: 90vh;
-    animation-name: card_open;
+    animation-name: card-open;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
 }
@@ -74,6 +74,12 @@ a{
     width: 85%;
     margin: auto;
 }
+.small-subline{
+    border: 3px black solid;
+    width: 34%;
+    margin-right: 33%;
+    margin-left: 33%;
+}
 .top-timeline{
     border-bottom: 6px black solid;
 }
@@ -83,7 +89,7 @@ a{
 h1,h2{
     letter-spacing: 2px;
 }
-/* @keyframes card_open{
+/* @keyframes card-open{
     0%    {height: 1vh; opacity: 0%; }
     50%  {height: 90vh; opacity: 20%; }
     100%    {height: 90vh;}
@@ -110,7 +116,7 @@ h1,h2{
     color: #000000;
 }
 
-#skills_container, #career_container{
+#skills-container, #career-container{
     height: 65vh;
     overflow-y: scroll;
 }
@@ -149,49 +155,49 @@ h1,h2{
         background-color: #FFFFFF;
         padding-bottom: 3%;
         height: auto;
-        animation-name: card_open;
+        animation-name: card-open;
         animation-duration: 0.8s;
         animation-fill-mode: forwards;
     }
-    #responsive_navbar{
+    #responsive-navbar{
         background-color: #3F3F3F;
         border-bottom: 5px #920000 solid;
     }
-    #skills_container, #career_container{
+    #skills-container, #career-container{
         height: auto;
     }
     #projects{
         min-height: 120vh;
     }
-    #present_anchor{
+    #present-anchor{
         color: #FFFFFF;
         background-color: #5F5F5F;
         border-right: 4px #920000 solid;
         border-bottom: 2px #920000 solid;
         border-top-left-radius: 20px;
     }
-    #career_anchor{
+    #career-anchor{
         color: #FFFFFF;
         background-color: #5F5F5F;
         border-right: 4px #4400ff solid;
         border-bottom: 2px #4400ff solid;
         border-top-left-radius: 20px;
     }
-    #skills_anchor{
+    #skills-anchor{
         color: #FFFFFF;
         background-color: #5F5F5F;
         border-right: 4px #AC0095 solid;
         border-bottom: 2px #AC0095 solid;
         border-top-left-radius: 20px;
     }
-    #projects_anchor{
+    #projects-anchor{
         color: #FFFFFF;
         background-color: #5F5F5F;
         border-right: 4px #006828 solid;
         border-bottom: 2px #006828 solid;
         border-top-left-radius: 20px;
     }
-    #about_anchor{
+    #about-anchor{
         color: #FFFFFF;
         background-color: #5F5F5F;
         border-right: 4px #D45500 solid;
