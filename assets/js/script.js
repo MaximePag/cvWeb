@@ -123,7 +123,7 @@ careerModal.addEventListener('show.bs.modal', function (event) {
 })
 
 
-document.getElementById('present_anchor').addEventListener('click',() => {
+document.getElementById('present-anchor').addEventListener('click',() => {
     var allCards = document.getElementsByClassName('card');
     for (i = 0; i < 5; i++){
         allCards[i].classList.remove('d-block');
@@ -131,10 +131,10 @@ document.getElementById('present_anchor').addEventListener('click',() => {
     }
     document.getElementById('present').classList.remove('d-none');
     document.getElementById('present').classList.add('d-block');
-    document.getElementById('responsive_navbar').style.borderBottom = '5px #920000 solid';
+    document.getElementById('responsive-navbar').style.borderBottom = '5px #920000 solid';
 });
 
-document.getElementById('career_anchor').addEventListener('click',() => {
+document.getElementById('career-anchor').addEventListener('click',() => {
     var allCards = document.getElementsByClassName('card');
     for (i = 0; i < 5; i++){
         allCards[i].classList.remove('d-block');
@@ -142,10 +142,10 @@ document.getElementById('career_anchor').addEventListener('click',() => {
     }
     document.getElementById('career').classList.remove('d-none');
     document.getElementById('career').classList.add('d-block');
-    document.getElementById('responsive_navbar').style.borderBottom = '5px #4400ff solid';
+    document.getElementById('responsive-navbar').style.borderBottom = '5px #4400ff solid';
 });
 
-document.getElementById('skills_anchor').addEventListener('click',() => {
+document.getElementById('skills-anchor').addEventListener('click',() => {
     var allCards = document.getElementsByClassName('card');
     for (i = 0; i < 5; i++){
         allCards[i].classList.remove('d-block');
@@ -153,10 +153,10 @@ document.getElementById('skills_anchor').addEventListener('click',() => {
     }
     document.getElementById('skills').classList.remove('d-none');
     document.getElementById('skills').classList.add('d-block');
-    document.getElementById('responsive_navbar').style.borderBottom = '5px #AC0095 solid';
+    document.getElementById('responsive-navbar').style.borderBottom = '5px #AC0095 solid';
 });
 
-document.getElementById('projects_anchor').addEventListener('click',() => {
+document.getElementById('projects-anchor').addEventListener('click',() => {
     var allCards = document.getElementsByClassName('card');
     for (i = 0; i < 5; i++){
         allCards[i].classList.remove('d-block');
@@ -164,10 +164,10 @@ document.getElementById('projects_anchor').addEventListener('click',() => {
     }
     document.getElementById('projects').classList.remove('d-none');
     document.getElementById('projects').classList.add('d-block');
-    document.getElementById('responsive_navbar').style.borderBottom = '5px #006828 solid';
+    document.getElementById('responsive-navbar').style.borderBottom = '5px #006828 solid';
 });
 
-document.getElementById('about_anchor').addEventListener('click',() => {
+document.getElementById('about-anchor').addEventListener('click',() => {
     var allCards = document.getElementsByClassName('card');
     for (i = 0; i < 5; i++){
         allCards[i].classList.remove('d-block');
@@ -175,9 +175,9 @@ document.getElementById('about_anchor').addEventListener('click',() => {
     }
     document.getElementById('about').classList.remove('d-none');
     document.getElementById('about').classList.add('d-block');
-    document.getElementById('responsive_navbar').style.borderBottom = '5px #D45500 solid';
+    document.getElementById('responsive-navbar').style.borderBottom = '5px #D45500 solid';
 });
 
-document.getElementById('theme_anchor').addEventListener('click',() => {
+document.getElementById('theme-anchor').addEventListener('click',() => {
     theme();
 });
