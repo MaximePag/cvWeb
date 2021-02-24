@@ -10,10 +10,18 @@ body{
 a{
     color: black;
 }
-
-
+h2{ 
+    font-variant: small-caps;
+}
+.row{
+    margin: 0;
+}
 
 /* TABS */
+#tabs{
+    height: 65px;
+    background-color: #3F3F3F;
+}
 .tab-close{
     padding-top: 5px;
     border-left: 5px #000000 solid;
@@ -58,15 +66,12 @@ a{
 .orange-close-color{
     border-bottom: 8px #D45500 solid;
 }
-.card{
+#cards{
     background-color: #FFFFFF;
-    padding-bottom: 3%;
-    height: 90vh;
-    animation-name: card-open;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
+    min-height: calc(98vh - 65px);
+    margin-top: 65px;
 }
-.card p{
+#cards p{
     font-size: 1.2em;
 }
 .subline{
@@ -88,6 +93,9 @@ a{
 }
 h1,h2{
     letter-spacing: 2px;
+}
+#projectCarousel{
+    min-height: 70vh;
 }
 /* @keyframes card-open{
     0%    {height: 1vh; opacity: 0%; }
@@ -117,7 +125,7 @@ h1,h2{
 }
 
 #skills-container, #career-container{
-    height: 65vh;
+    height: calc(100vh - 230px);
     overflow-y: scroll;
 }
 .skills-link.active{
@@ -148,16 +156,16 @@ h1,h2{
     }
 }
 @media (max-width: 1024px){
-    #present, #career, #skills, #projects, #about{
-        padding-top: 9vh;
-    }
-    .card{
-        background-color: #FFFFFF;
-        padding-bottom: 3%;
+    #tabs{
         height: auto;
-        animation-name: card-open;
-        animation-duration: 0.8s;
-        animation-fill-mode: forwards;
+        background-color: none;
+    }
+    #present, #career, #skills, #projects, #about{
+        padding-top: 40px);
+    }
+    #cards{
+        background-color: #FFFFFF;
+        min-height: auto;
     }
     #responsive-navbar{
         background-color: #3F3F3F;
@@ -167,7 +175,7 @@ h1,h2{
         height: auto;
     }
     #projects{
-        min-height: 120vh;
+        height: 100vh;
     }
     #present-anchor{
         color: #FFFFFF;

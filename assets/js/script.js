@@ -178,6 +178,6 @@ document.getElementById('about-anchor').addEventListener('click',() => {
     document.getElementById('responsive-navbar').style.borderBottom = '5px #D45500 solid';
 });
 
-document.getElementById('theme-anchor').addEventListener('click',() => {
-    theme();
-});
+// document.getElementById('theme-anchor').addEventListener('click',() => {
+//     theme();
+// });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,13 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.15.1-web/css/all.css" />
     <link id="style" rel="stylesheet" href="assets/css/styleDay.css" />
 </head>
+
 <body>
     <nav id="responsive-navbar" class="navbar navbar-expand-lg navbar-dark d-lg-none fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">CV - Maxime Pageot</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#responsive-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fas fa-bars"></i></span>
+                <span><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="responsive-collapse">
                 <ul class="navbar-nav text-center">
@@ -29,497 +31,495 @@
             </div>
         </div>
     </nav>
-    <section class="container-fluid">
-        <span id="year-2021"></span>
+    <section id="tabs" class="container-fluid fixed-top p-0">
         <div class="row">
-            <div class="col-3 tab tab-open red-open-color d-none d-lg-block" onclick="toggle(this, 'present')"><p class="text-center mt-1"><i class="fas fa-home fa-2x"></i> Présentation</p></div>
-            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'career')"><p class="text-center mt-1"><i class="fas fa-briefcase fa-2x"></i> Parcours</p></div>
-            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'skills')"><p class="text-center mt-1"><i class="fas fa-laptop-code fa-2x"></i> Compétences</p></div>
-            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'projects')"><p class="text-center mt-1"><i class="fas fa-images fa-2x"></i> Projets Réalisés</p></div>
-            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'about')"><p class="text-center mt-1"><i class="fas fa-id-card fa-2x"></i> À Propos</div>
-            <div class="col-1 tab tab-open d-none d-lg-block" onclick="theme()"><p class="text-center mt-2"><i id="themeIcon" class="fas fa-sun fa-2x"></i></p></div>
-            <div id="present" class="card d-block">
-                <div class="row">
-                    <div class="col-12 text-center mb-5">
-                        <h1>Maxime Pageot</h1>
-                        <h2>- Développeur Web & Web Mobile -</h2>
-                        <hr class="subline" />
-                    </div>
-                    <div class="col-md-12 col-lg-10 offset-lg-1">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-4 my-lg-auto mx-auto">
-                                <img id="profil" class="rounded-circle d-block mx-auto img-fluid" src="assets/img/small.jpg" alt="Photo de Maxime Pageot" />
-                                <p class="d-md-inline d-lg-block text-center"><a href="https://www.linkedin.com/in/maxime-pageot-7a27271a6/"><i class="fab fa-linkedin fa-3x m-1"></i></a><a href="https://github.com/MaximePag"><i class="fab fa-github-square fa-3x m-1"></i></a></p>
-                            </div>
-                            <div class="col-md-12 col-lg-3 text-left my-lg-auto my-md-3">
-                                <p class="d-md-inline d-lg-block"><i class="fas fa-map-marked-alt fa-2x mx-2"></i>Roye, Picardie, France</p>
-                                <p class="d-md-inline d-lg-block"><i class="fas fa-envelope fa-2x mx-2"></i>max_p@live.fr</p>
-                                <p class="d-md-inline d-lg-block"><i class="fas fa-phone fa-2x mx-2"></i>+33 (0) 6 21 29 00 09</p>
-                                <p class="d-md-inline d-lg-block"><i class="fas fa-car fa-2x mx-2"></i>Permis B</p>
-                                <p class="d-md-inline d-lg-block"><a href="assets/img/CV29012021.pdf" download><i class="fas fa-file-pdf fa-2x mx-2"></i>Télécharger le CV</a></p>
-                            </div>
-                            <div class="col-md-12 col-lg-5 m-auto text-center">
-                                <p>Bonjour je vous souhaite la bienvenue sur mon CV Numérique.</p>
-                                <p>Je m'appelle Maxime Pageot, j'ai 23 ans, et je suis Développeur Web.</p>
-                                <p>Passionné de l'informatique depuis mon enfance, j'ai decidé en 2019 d'entamer ma reconversion.</p>
-                                <p>Issu du monde de l'industrie, cette reconversion m'a permis de m'épanouir dans ma vie professionnelle.</p>
-                                <p>Je consacre de nombreux efforts dans ce métier et j'ai fini par obtenir en 2020 mon Titre de Développeur Web.</p>
-                                <p>De nature curieuse, calme et aimant le travail en équipe, j'aspire à mettre en application mes compétences acquises et à les développer.</p>
-                                <p>Je vous souhaite une agréable visite !</p>
-                            </div>
+            <div class="col-3 tab tab-open red-open-color d-none d-lg-block" onclick="toggle(this, 'present')">
+                <p class="text-center mt-1"><i class="fas fa-home fa-2x"></i> Présentation</p>
+            </div>
+            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'career')">
+                <p class="text-center mt-1"><i class="fas fa-briefcase fa-2x"></i> Parcours</p>
+            </div>
+            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'skills')">
+                <p class="text-center mt-1"><i class="fas fa-laptop-code fa-2x"></i> Compétences</p>
+            </div>
+            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'projects')">
+                <p class="text-center mt-1"><i class="fas fa-images fa-2x"></i> Projets</p>
+            </div>
+            <div class="col-2 tab tab-close red-close-color d-none d-lg-block" onclick="toggle(this, 'about')">
+                <p class="text-center mt-1"><i class="fas fa-id-card fa-2x"></i> À Propos
+            </div>
+            <div class="col-1 tab tab-open d-none d-lg-block" onclick="">
+                <p class="text-center mt-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><i id="themeIcon" class="fas fa-sun fa-2x"></i></p>
+            </div>
+        </div>
+    </section>
+    <section id="cards">
+        <div id="present" class="card d-block">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <h1>Maxime Pageot</h1>
+                    <h2>- Développeur Web & Web Mobile -</h2>
+                    <hr class="subline" />
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-3 my-lg-auto mx-auto">
+                            <img id="profil" class="rounded-circle d-block mx-auto img-fluid" src="assets/img/small.jpg" alt="Photo de Maxime Pageot" />
+                            <p class="d-md-inline d-lg-block text-center"><a href="https://www.linkedin.com/in/maxime-pageot-7a27271a6/"><i class="fab fa-linkedin fa-3x m-1"></i></a><a href="https://github.com/MaximePag"><i class="fab fa-github-square fa-3x m-1"></i></a></p>
+                        </div>
+                        <div class="col-md-12 col-lg-3 text-left my-lg-auto my-md-3">
+                            <p class="d-md-inline d-lg-block"><i class="fas fa-map-marked-alt fa-2x mx-2"></i>Roye, Picardie, France</p>
+                            <p class="d-md-inline d-lg-block"><i class="fas fa-envelope fa-2x mx-2"></i>max_p@live.fr</p>
+                            <p class="d-md-inline d-lg-block"><i class="fas fa-phone fa-2x mx-2"></i>+33 (0) 6 21 29 00 09</p>
+                            <p class="d-md-inline d-lg-block"><i class="fas fa-car fa-2x mx-2"></i>Permis B</p>
+                            <p class="d-md-inline d-lg-block"><a href="assets/img/CV15022021.pdf" download><i class="fas fa-file-pdf fa-2x mx-2"></i>Télécharger le CV</a></p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 m-auto text-center">
+                            <p>Bonjour je m'appelle Maxime Pageot, j'ai 23 ans, et je suis Développeur Web.</p>
+                            <p>Passionné de l'informatique depuis mon enfance, j'ai decidé en 2019 d'entamer ma reconversion.</p>
+                            <p>Issu du monde de l'industrie, cette reconversion m'a permis de m'épanouir dans ma vie professionnelle.</p>
+                            <p>Je consacre de nombreux efforts dans ce métier et j'ai fini par obtenir en 2020 mon Titre de Développeur Web.</p>
+                            <p>De nature curieuse, calme et aimant le travail en équipe, j'aspire à mettre en application mes compétences acquises et à les développer.</p>
+                            <p>Je vous souhaite une agréable visite !</p>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
-            <div id="career" class="card d-none">
-                <div class="row">
-                    <div class="col-12 text-center mb-1">
-                        <h1>Parcours</h1>
-                        <h2>- Formations & Expériences professionnelles -</h2>
-                        <hr class="subline" />
+        </div>
+        <div id="career" class="card d-none">
+            <div class="row">
+                <div class="col-12 text-center my-3">
+                    <h2>- Mon Parcours : Formations & Expériences professionnelles -</h2>
+                    <hr class="subline" />
+                </div>
+                <nav id="career-navbar" class="navbar navbar-light d-none d-md-flex">
+                    <ul class="nav nav-pills mx-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link career-link active" href="#year-2021">2021</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link career-link" href="#year-2020">2020</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link career-link" href="#year-2019">2019</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link career-link" href="#year-2018">2018</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link career-link" href="#year-2017">2017</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link career-link" href="#year-2016">2016</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link career-link" href="#year-2015">2015</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link career-link" href="#year-2014">2014</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="modal fade" id="careerModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitle"><i id="modalTitleIcon"></i></h5>
+                                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle fa-2x"></i></button>
+                            </div>
+                            <div class="modal-body" id="modalBody">
+                                <p id="modalCalendar"><i class="far fa-calendar-alt"></i> </p>
+                                <p id="modalLocal"><i class="fas fa-map-marker-alt"></i> </p>
+                                <p id="modalText"></p>
+                            </div>
+                            <div class="modal-footer" id="modalFoot">Texte Indisponible</div>
+                        </div>
                     </div>
-                    <nav id="career-navbar" class="navbar navbar-light d-none d-md-flex">
-                        <ul class="nav nav-pills mx-auto">
-                            <li class="nav-item mx-2">
-                                <a class="nav-link career-link active" href="#year-2021">2021</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link career-link" href="#year-2020">2020</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link career-link" href="#year-2019">2019</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link career-link" href="#year-2018">2018</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link career-link" href="#year-2017">2017</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link career-link" href="#year-2016">2016</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link career-link" href="#year-2015">2015</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link career-link" href="#year-2014">2014</a>
-                            </li>
-                        </ul>
+                </div>
+                <div id="career-container" class="col-lg-12 row" data-bs-spy="scroll" data-bs-target="#career-navbar" data-bs-offset="0" tabindex="0">
+                    <span id="year-2020"></span>
+                    <div class="col-lg-10 offset-lg-1 row pt-5">
+                        <div class="col-lg-4 mb-lg-0 mb-5">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
+                        </div>
+                        <div class="col-lg-8 timeline-courses">
+                            <p><i class="fas fa-book"></i> Formation C# (.NET)</p>
+                            <p><i class="far fa-calendar-alt"></i> Janvier 2021 - Avril 2021 (400 h)</p>
+                            <p><i class="fas fa-map-marker-alt"></i> École Numérique La Manu à Noyon (60)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="csharp">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <span id="year-2019"></span>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
+                        </div>
+                        <div class="col-lg-8 timeline-courses">
+                            <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Développeur Web & Web Mobile</p>
+                            <p><i class="far fa-calendar-alt"></i> Mars 2020 - Septembre 2020 (805 h)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> École Numérique La Manu à Noyon (60)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <span id="year-2018"></span>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/deceuninck.jpg" alt="Logo de Deceuninck" />
+                        </div>
+                        <div class="col-lg-8 timeline-work">
+                            <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Conducteur de ligne d'extrusion de PVC</p>
+                            <p><i class="far fa-calendar-alt"></i> Juillet 2018 - Décembre 2019 (17 mois)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Deceuninck à Roye (80)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/promeo.jpg" alt="Logo de ProMeo" />
+                        </div>
+                        <div class="col-lg-8 timeline-courses">
+                            <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Conducteur de ligne et de machines automatisées</p>
+                            <p><i class="far fa-calendar-alt"></i> Juillet 2018 - Mai 2018 (480 h)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Centre de formation ProMeo à Amiens (80)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <span id="year-2017"></span>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/inter.png" alt="Logo de Intermarché" />
+                        </div>
+                        <div class="col-lg-8 timeline-work">
+                            <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Préparateur de commandes</p>
+                            <p><i class="far fa-calendar-alt"></i> Mai 2018 - Juillet 2018 (2 mois)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Base Intermarché à Chaulnes (80)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/matines.png" alt="Logo de Matines" />
+                        </div>
+                        <div class="col-lg-8 timeline-work">
+                            <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Manutentionnaire</p>
+                            <p><i class="far fa-calendar-alt"></i> Décembre 2017 - Avril 2018 (5 mois)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Matines à Montdidier (80)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/saison.jpg" alt="Photo de saisonniers" />
+                        </div>
+                        <div class="col-lg-8 timeline-work">
+                            <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Saisonnier</p>
+                            <p><i class="far fa-calendar-alt"></i> Juillet 2017 - Octobre 2017 (4 mois)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Thierry Peugniez SARL à Gruny (80)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <span id="year-2016"></span>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/plombier.jpg" alt="Photo d'un plombier" />
+                        </div>
+                        <div class="col-lg-8 timeline-work">
+                            <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Plombier-Manutentionnaire</p>
+                            <p><i class="far fa-calendar-alt"></i> Janvier 2017 - Avril 2017 (4 mois)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Qualichauff Services à Péronne (80)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <span id="year-2015"></span>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
+                        </div>
+                        <div class="col-lg-8 timeline-school">
+                            <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Bac Pro Maintenance des Équipements Industriels</p>
+                            <p><i class="far fa-calendar-alt"></i> Juillet 2015 - Juillet 2016 (10 mois)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Lycée Jean Racine à Montdidier (80)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <span id="year-2014"></span>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
+                        </div>
+                        <div class="col-lg-8 timeline-school">
+                            <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> BEP Maintenance des Produits et Équipements Industriels</p>
+                            <p><i class="far fa-calendar-alt"></i> Juillet 2014 - Juillet 2015 (10 mois)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Lycée Jean Racine à Montdidier (80)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <hr class="subline my-5" />
+                    <div class="col-lg-10 offset-lg-1 row">
+                        <div class="col-lg-4">
+                            <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lmichel.jpg" alt="Logo du Collège Louise Michel de Roye" />
+                        </div>
+                        <div class="col-lg-8 timeline-school">
+                            <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Brevet des collèges</p>
+                            <p><i class="far fa-calendar-alt"></i> Juillet 2011 - Juillet 2012 (10 mois)</p>
+                            <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Lycée Jean Racine à Montdidier (80)</p>
+                            <button disabled type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="card d-none">
+            <div class="row">
+                <div class="col-12 text-center my-3">
+                    <h2>- Mes Compétences de Développeur -</h2>
+                    <hr class="subline" />
+                </div>
+                <nav id="skills-navbar" class="navbar col-lg-2">
+                    <nav class="nav nav-pills flex-column d-none d-md-flex">
+                        <a class="nav-link skills-link my-2" href="#languages" data-bs-toggle="collapse" data-bs-target="#languages-collapse" aria-expanded="false">Languages</a>
+                        <a class="nav-link skills-link my-2" href="#frameworks" data-bs-toggle="collapse" data-bs-target="#frameworks-collapse" aria-expanded="false">Frameworks & Bibiliothèques</a>
+                        <a class="nav-link skills-link my-2" href="#cms" data-bs-toggle="collapse" data-bs-target="#cms-collapse" aria-expanded="false">Système de Gestion de Contenu</a>
+                        <a class="nav-link skills-link my-2" href="#others" data-bs-toggle="collapse" data-bs-target="#others-collapse" aria-expanded="false">Outils & Autres compétences</a>
                     </nav>
-                    <div class="modal fade" id="careerModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modalTitle"><i id="modalTitleIcon"></i></h5>
-                                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times-circle fa-2x"></i></button>
-                                </div>
-                                <div class="modal-body" id="modalBody">
-                                    <p id="modalCalendar"><i class="far fa-calendar-alt"></i> </p>
-                                    <p id="modalLocal"><i class="fas fa-map-marker-alt"></i> </p>
-                                    <p id="modalText"></p>
-                                </div>
-                                <div class="modal-footer" id="modalFoot">Texte Indisponible</div>
-                            </div>
+                </nav>
+                <div id="skills-container" class="col-lg-10" data-bs-spy="scroll" data-bs-target="#skills-navbar" data-bs-offset="200" tabindex="0">
+                    <h3 id="languages" class="text-center">Langages informatiques</h3>
+                    <hr class="subline mb-3">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/html5.png" alt="Logo HTML 5">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 id="html"><a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank">HyperText Markup Language 5 <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <p>Connaissances des bonnes pratiques HTML relatives à l'accessibilité et au SEO.</p>
+                        </div>
+                        <hr class="small-subline mb-5" />
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/css3.png" alt="Logo CSS 3">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 id="css"><a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">Cascade Style Sheet 3 <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <p>Connaissance des sélecteurs, media queries, conventionne mes nommages.</p>
+                        </div>
+                        <hr class="small-subline mb-5" />
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/js.png" alt="Logo JavaScript">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 id="js"><a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                            <p>Manipulation du DOM et AJAX.</p>
+                        </div>
+                        <hr class="small-subline mb-5" />
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/php.png" alt="Logo PHP 7">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 id="php"><a href="https://fr.wikipedia.org/wiki/PHP" target="_blank">PHP HyperText Preprocessor 7 <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+                            <p>Programmation en Orienté Objet avec architecture MVC. Expressions Régulières.</p>
+                        </div>
+                        <hr class="small-subline mb-5" />
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/sql.png" alt="Logo non officiel SQL">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 id="sql"><a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank">Structured Query Language <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+                            <p>Manipulation de base de données MySQL et MariaDB. Requêtes CRUD. En cours d'apprentissage du T-SQL.</p>
+                        </div>
+                        <hr class="small-subline mb-5" />
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/csharp.png" alt="Logo C Sharp">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 id="csharp"><a href="https://fr.wikipedia.org/wiki/C_sharp" target="_blank">C Sharp <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                            <p>Développement d'applications consoles.</p>
                         </div>
                     </div>
-                    <div id="career-container" class="col-lg-12 row" data-bs-spy="scroll" data-bs-target="#career-navbar" data-bs-offset="0" tabindex="0">
-                        <span id="year-2020"></span>
-                        <div class="col-lg-10 offset-lg-1 row pt-5">
-                            <div class="col-lg-4 mb-lg-0 mb-5">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
-                            </div>
-                            <div class="col-lg-8 timeline-courses">
-                                <p><i class="fas fa-book"></i> Formation C# (.NET)</p>
-                                <p><i class="far fa-calendar-alt"></i> Janvier 2021 - Avril 2021 (400 h)</p>
-                                <p><i class="fas fa-map-marker-alt"></i> École Numérique La Manu à Noyon (60)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="csharp">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
+                    <h3 id="frameworks" class="text-center">Frameworks & Bibliothèques</h3>
+                    <hr class="subline mb-3">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/bootstrap.png" alt="Logo Bootstrap 5">
                         </div>
-                        <span id="year-2019"></span>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lamanu.jpg" alt="Logo de l'école La Manu" />
-                            </div>
-                            <div class="col-lg-8 timeline-courses">
-                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Développeur Web & Web Mobile</p>
-                                <p><i class="far fa-calendar-alt"></i> Mars 2020 - Septembre 2020 (805 h)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> École Numérique La Manu à Noyon (60)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
+                        <div class="col-lg-9">
+                            <h4 id="bs"><a href="https://fr.wikipedia.org/wiki/Bootstrap_(framework)" target="_blank">Bootstrap 4 & 5 (Framework CSS) <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+                            <p>Intégration, utilisations des composants, responsive design.</p>
                         </div>
-                        <span id="year-2018"></span>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/deceuninck.jpg" alt="Logo de Deceuninck" />
-                            </div>
-                            <div class="col-lg-8 timeline-work">
-                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Conducteur de ligne d'extrusion de PVC</p>
-                                <p><i class="far fa-calendar-alt"></i> Juillet 2018 - Décembre 2019 (17 mois)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Deceuninck à Roye (80)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
+                        <hr class="small-subline mb-5" />
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/jquery.png" alt="Logo de jQuery">
                         </div>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/promeo.jpg" alt="Logo de ProMeo" />
-                            </div>
-                            <div class="col-lg-8 timeline-courses">
-                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Titre Pro Conducteur de ligne et de machines automatisées</p>
-                                <p><i class="far fa-calendar-alt"></i> Juillet 2018 - Mai 2018 (480 h)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Centre de formation ProMeo à Amiens (80)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
+                        <div class="col-lg-9">
+                            <h4 id="dotnet"><a href="https://fr.wikipedia.org/wiki/JQuery" target="_blank">jQuery (Bibliothèque JavaScript) <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                            <p></p>
                         </div>
-                        <span id="year-2017"></span>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/inter.png" alt="Logo de Intermarché" />
-                            </div>
-                            <div class="col-lg-8 timeline-work">
-                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Préparateur de commandes</p>
-                                <p><i class="far fa-calendar-alt"></i> Mai 2018 - Juillet 2018 (2 mois)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Base Intermarché à Chaulnes (80)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
+                        <hr class="small-subline mb-5" />
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/dotnet.png" alt="Logo .NET Framework">
                         </div>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/matines.png" alt="Logo de Matines" />
-                            </div>
-                            <div class="col-lg-8 timeline-work">
-                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Manutentionnaire</p>
-                                <p><i class="far fa-calendar-alt"></i> Décembre 2017 - Avril 2018 (5 mois)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Matines à Montdidier (80)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/saison.jpg" alt="Photo de saisonniers" />
-                            </div>
-                            <div class="col-lg-8 timeline-work">
-                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Saisonnier</p>
-                                <p><i class="far fa-calendar-alt"></i> Juillet 2017 - Octobre 2017 (4 mois)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Thierry Peugniez SARL à Gruny (80)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
-                        <span id="year-2016"></span>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/plombier.jpg" alt="Photo d'un plombier" />
-                            </div>
-                            <div class="col-lg-8 timeline-work">
-                                <p class="font-weight-bold"><i class="fas fa-briefcase"></i> Plombier-Manutentionnaire</p>
-                                <p><i class="far fa-calendar-alt"></i> Janvier 2017 - Avril 2017 (4 mois)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Qualichauff Services à Péronne (80)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
-                        <span id="year-2015"></span>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
-                            </div>
-                            <div class="col-lg-8 timeline-school">
-                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Bac Pro Maintenance des Équipements Industriels</p>
-                                <p><i class="far fa-calendar-alt"></i> Juillet 2015 - Juillet 2016 (10 mois)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Lycée Jean Racine à Montdidier (80)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
-                        <span id="year-2014"></span>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/jracine.jpg" alt="Logo du Lycée Jean Racine de Montdidier" />
-                            </div>
-                            <div class="col-lg-8 timeline-school">
-                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> BEP Maintenance des Produits et Équipements Industriels</p>
-                                <p><i class="far fa-calendar-alt"></i> Juillet 2014 - Juillet 2015 (10 mois)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Lycée Jean Racine à Montdidier (80)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
-                        </div>
-                        <hr class="subline my-5" />
-                        <div class="col-lg-10 offset-lg-1 row">
-                            <div class="col-lg-4">
-                                <img class="img-fluid w-50 rounded-circle mx-auto d-block" src="assets/img/lmichel.jpg" alt="Logo du Collège Louise Michel de Roye" />
-                            </div>
-                            <div class="col-lg-8 timeline-school">
-                                <p class="font-weight-bold"><i class="fas fa-user-graduate"></i> Brevet des collèges</p>
-                                <p><i class="far fa-calendar-alt"></i> Juillet 2011 - Juillet 2012 (10 mois)</p>
-                                <p class="font-weight-bold"><i class="fas fa-map-marker-alt"></i> Lycée Jean Racine à Montdidier (80)</p>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#careerModal" data-bs-modal-type="dwwm">En savoir <i class="fas fa-plus"></i></button>
-                            </div>
+                        <div class="col-lg-9">
+                            <h4 id="dotnet"><a href="https://fr.wikipedia.org/wiki/Framework_.NET" target="_blank">.NET (Framework C#) <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                            <p>En cours d'apprentissage de développement d'applications web avec ASP.NET et en architecture MVC en lien avec une base de données.</p>
                         </div>
                     </div>
-                </div>  
+                    <h3 id="software" class="text-center">Système de Gestion de Contenu (CMS)</h3>
+                    <hr class="subline mb-3">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img class="img-fluid d-block m-auto" src="assets/img/wordpress.png" alt="Logo WordPress">
+                        </div>
+                        <div class="col-lg-9">
+                            <h4 id="wp"><a href="https://fr.wikipedia.org/wiki/WordPress" target="_blank">WordPress <i class="fas fa-external-link-alt"></i></a></h4>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                            <p>Sites vitrines créées, utilisations de plugins tel que wooCommerce.</p>
+                        </div>
+                    </div>
+                    <h3 id="software" class="text-center">Logiciels Utilisés</h3>
+                    <hr class="subline mb-3">
+                    <div class="row my-5 text-center">
+                        <div class="col-lg-2 col-4 mb-5">
+                            <h4>Visual Studio Code</h4>
+                            <img class="img-fluid d-block m-auto" src="assets/img/vscode.png" alt="Logo Visual Studio Code">
+                        </div>
+                        <div class="col-lg-2 col-4 mb-5">
+                            <h4>Visual Studio 2019</h4>
+                            <img class="img-fluid d-block m-auto" src="assets/img/vs2019.png" alt="Logo Visual Studio 2019">
+                        </div>
+                        <div class="col-lg-2 col-4 mb-5">
+                            <h4>GIT</h4>
+                            <img class="img-fluid d-block m-auto" src="assets/img/git.png" alt="Logo GIT">
+                        </div>
+                        <div class="col-lg-2 col-4 mb-5">
+                            <h4>GitHub</h4>
+                            <img class="img-fluid d-block m-auto" src="assets/img/github.png" alt="Logo GitHub">
+                        </div>
+                        <div class="col-lg-2 col-4 mb-5">
+                            <h4>JMerise</h4>
+                            <img class="img-fluid d-block m-auto" src="assets/img/jmerise.png" alt="Logo JMerise">
+                        </div>
+                        <div class="col-lg-2 col-4 mb-5">
+                            <h4>PHPMyAdmin</h4>
+                            <img class="img-fluid d-block m-auto" src="assets/img/phpmyadmin.png" alt="Logo PHPMyAdmin">
+                        </div>
+                        <div class="col-lg-2 col-4 mb-5">
+                            <h4>WAMP</h4>
+                            <img class="img-fluid d-block m-auto" src="assets/img/wamp.png" alt="Logo WAMP">
+                        </div>
+                        <div class="col-lg-2 col-4 mb-5">
+                            <h4>LAMP</h4>
+                            <img class="img-fluid d-block m-auto" src="assets/img/lamp.png" alt="Logo LAMP">
+                        </div>
+                    </div>
+                    <h3 id="os" class="text-center">Systèmes d'exploitations</h3>
+                    <hr class="subline mb-3">
+                    <div class="row my-5">
+                        <div class="col-lg-3 col-6 offset-lg-2 text-center">
+                            <h4 id="dotnet">Windows</h4>
+                            <h5>XP, Vista, 7, 8.1, 10</h5>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                            <img class="img-fluid d-block m-auto" src="assets/img/windows.png" alt="Logo Windows">
+                        </div>
+                        <div class="col-lg-3 col-6 offset-lg-2 text-center">
+                            <h4 id="dotnet">Linux</h4>
+                            <h5>Ubuntu</h5>
+                            <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                            <img class="img-fluid d-block m-auto" src="assets/img/tux.png" alt="Tux et logo de Ubuntu">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="skills" class="card d-none">
-                <div class="row">
-                    <div class="col-12 text-center mb-5">
-                        <h1>Compétences</h1>
-                        <h2>- Développeur Web & Web Mobile -</h2>
-                        <hr class="subline" />
-                    </div>
-                    <nav id="skills-navbar" class="navbar col-lg-2">
-                        <nav class="nav nav-pills flex-column d-none d-md-flex">
-                            <a class="nav-link skills-link my-2" href="#languages" data-bs-toggle="collapse" data-bs-target="#languages-collapse" aria-expanded="false">Languages</a>
-                            <nav id="languages-collapse" class="nav collapse text-center flex-column">
-                                <a class="nav-link skills-link ms-3 my-1" href="#html">HTML 5</a>
-                                <a class="nav-link skills-link ms-3 my-1" href="#css">CSS 3</a>
-                                <a class="nav-link skills-link ms-3 my-1" href="#js">JavaScript</a>
-                                <a class="nav-link skills-link ms-3 my-1" href="#php">PHP 7</a>
-                                <a class="nav-link skills-link ms-3 my-1" href="#sql">SQL</a>
-                                <a class="nav-link skills-link ms-3 my-1" href="#csharp">C#</a>
-                            </nav>
-                            <a class="nav-link skills-link my-2" href="#frameworks" data-bs-toggle="collapse" data-bs-target="#frameworks-collapse" aria-expanded="false">Frameworks</a>
-                            <nav id="frameworks-collapse" class="nav nav-pills flex-column collapse">
-                                <a class="nav-link skills-link ms-3 my-1" href="#bs">Bootstrap 4 & 5</a>
-                                <a class="nav-link skills-link ms-3 my-1" href="#dotnet">.NET</a>
-                            </nav>
-                            <a class="nav-link skills-link my-2" href="#cms" data-bs-toggle="collapse" data-bs-target="#cms-collapse" aria-expanded="false">Système de Gestion de Contenu</a>
-                            <nav id="cms-collapse" class="nav nav-pills flex-column collapse">
-                                <a class="nav-link ms-3 my-1" href="#wp">WordPress</a>
-                            </nav>
-                            <a class="nav-link skills-link my-2" href="#others" data-bs-toggle="collapse" data-bs-target="#others-collapse" aria-expanded="false">Outils & Autres compétences</a>
-                            <nav id="others-collapse" class="nav nav-pills flex-column collapse">
-                                <a class="nav-link skills-link ms-3 my-1" href="#software">Logiciels</a>
-                                <a class="nav-link skills-link ms-3 my-1" href="#os">Systèmes d'Exploitations</a>
-                            </nav>
-                        </nav>
-                    </nav>
-                    <div id="skills-container" class="col-lg-10" data-bs-spy="scroll" data-bs-target="#skills-navbar" data-bs-offset="200" tabindex="0">
-                        <h3 id="languages" class="text-center">Langages informatiques</h3>
-                        <hr class="subline mb-3">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <img class="img-fluid d-block m-auto" src="assets/img/html5.png" alt="Logo HTML 5">
-                            </div>
-                            <div class="col-lg-9">
-                                <h4 id="html"><a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank">HyperText Markup Language 5 <i class="fas fa-external-link-alt"></i></a></h4>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
-                                <p>Connaissances des bonnes pratiques HTML relatives à l'accessibilité et au SEO.</p>
-                            </div>
-                            <hr class="small-subline mb-5" />
-                            <div class="col-lg-3">
-                                <img class="img-fluid d-block m-auto" src="assets/img/css3.png" alt="Logo CSS 3">
-                            </div>
-                            <div class="col-lg-9">
-                                <h4 id="css"><a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">Cascade Style Sheet 3 <i class="fas fa-external-link-alt"></i></a></h4>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
-                                <p>Connaissance des sélecteurs, media queries, conventionne mes nommages.</p>
-                            </div>
-                            <hr class="small-subline mb-5" />
-                            <div class="col-lg-3">
-                                <img class="img-fluid d-block m-auto" src="assets/img/js.png" alt="Logo JavaScript">
-                            </div>
-                            <div class="col-lg-9">
-                                <h4 id="js"><a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript <i class="fas fa-external-link-alt"></i></a></h4>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-                                <p>Manipulation du DOM et AJAX.</p>
-                            </div>
-                            <hr class="small-subline mb-5" />
-                            <div class="col-lg-3">
-                                <img class="img-fluid d-block m-auto" src="assets/img/php.png" alt="Logo PHP 7">
-                            </div>
-                            <div class="col-lg-9">
-                                <h4 id="php"><a href="https://fr.wikipedia.org/wiki/PHP" target="_blank">PHP HyperText Preprocessor 7 <i class="fas fa-external-link-alt"></i></a></h4>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
-                                <p>Programmation en Orienté Objet avec architecture MVC. Expressions Régulières.</p>
-                            </div>
-                            <hr class="small-subline mb-5" />
-                            <div class="col-lg-3">
-                                <img class="img-fluid d-block m-auto" src="assets/img/sql.png" alt="Logo non officiel SQL">
-                            </div>
-                            <div class="col-lg-9">
-                                <h4 id="sql"><a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank">Structured Query Language <i class="fas fa-external-link-alt"></i></a></h4>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
-                                <p>Manipulation de base de données MySQL et MariaDB. Requêtes CRUD.</p>
-                            </div>
-                            <hr class="small-subline mb-5" />
-                            <div class="col-lg-3">
-                                <img class="img-fluid d-block m-auto" src="assets/img/csharp.png" alt="Logo C Sharp">
-                            </div>
-                            <div class="col-lg-9">
-                                <h4 id="csharp"><a href="https://fr.wikipedia.org/wiki/C_sharp" target="_blank">C Sharp <i class="fas fa-external-link-alt"></i></a></h4>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-                                <p>Développement d'applications consoles.</p>
-                            </div>
-                        </div>
-                        <h3 id="frameworks" class="text-center">Frameworks & Bibliothèques</h3>
-                        <hr class="subline mb-3">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <img class="img-fluid d-block m-auto" src="assets/img/bootstrap.png" alt="Logo Bootstrap 5">
-                            </div>
-                            <div class="col-lg-9">
-                                <h4 id="bs"><a href="https://fr.wikipedia.org/wiki/Bootstrap_(framework)" target="_blank">Bootstrap 4 & 5 (Framework CSS) <i class="fas fa-external-link-alt"></i></a></h4>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
-                                <p>Intégration, utilisations des composants, responsive design.</p>
-                            </div>
-                            <hr class="small-subline mb-5" />
-                            <div class="col-lg-3">
-                                <img class="img-fluid d-block m-auto" src="assets/img/dotnet.png" alt="Logo .NET Framework">
-                            </div>
-                            <div class="col-lg-9">
-                                <h4 id="dotnet"><a href="https://fr.wikipedia.org/wiki/Framework_.NET" target="_blank">.NET (Framework C#) <i class="fas fa-external-link-alt"></i></a></h4>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-                                <p></p>
-                            </div>
-                        </div>
-                        <h3 id="software" class="text-center">Système de Gestion de Contenu (CMS)</h3>
-                        <hr class="subline mb-3">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <img class="img-fluid d-block m-auto" src="assets/img/wordpress.png" alt="Logo WordPress">
-                            </div>
-                            <div class="col-lg-9">
-                                <h4 id="wp">WordPress</h4>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-                                <p>Sites vitrines créées, utilisations de plugins tel que wooCommerce.</p>
-                            </div>
-                        </div>
-                        <h3 id="software" class="text-center">Logiciels Utilisés</h3>
-                        <hr class="subline mb-3">
-                        <div class="row my-5 text-center">
-                            <div class="col-lg-2 col-4 mb-5">
-                                <h4>Visual Studio Code</h4>
-                                <img class="img-fluid d-block m-auto" src="assets/img/vscode.png" alt="Logo Visual Studio Code">
-                            </div>
-                            <div class="col-lg-2 col-4 mb-5">
-                                <h4>Visual Studio 2019</h4>
-                                <img class="img-fluid d-block m-auto" src="assets/img/vs2019.png" alt="Logo Visual Studio 2019">
-                            </div>
-                            <div class="col-lg-2 col-4 mb-5">
-                                <h4>GIT</h4>
-                                <img class="img-fluid d-block m-auto" src="assets/img/git.png" alt="Logo GIT">
-                            </div>
-                            <div class="col-lg-2 col-4 mb-5">
-                                <h4>GitHub</h4>
-                                <img class="img-fluid d-block m-auto" src="assets/img/github.png" alt="Logo GitHub">
-                            </div>
-                            <div class="col-lg-2 col-4 mb-5">
-                                <h4>JMerise</h4>
-                                <img class="img-fluid d-block m-auto" src="assets/img/jmerise.png" alt="Logo JMerise">
-                            </div>
-                            <div class="col-lg-2 col-4 mb-5">
-                                <h4>PHPMyAdmin</h4>
-                                <img class="img-fluid d-block m-auto" src="assets/img/phpmyadmin.png" alt="Logo PHPMyAdmin">
-                            </div>
-                            <div class="col-lg-2 col-4 mb-5">
-                                <h4>WAMP</h4>
-                                <img class="img-fluid d-block m-auto" src="assets/img/wamp.png" alt="Logo WAMP">
-                            </div>
-                            <div class="col-lg-2 col-4 mb-5">
-                                <h4>LAMP</h4>
-                                <img class="img-fluid d-block m-auto" src="assets/img/lamp.png" alt="Logo LAMP">
-                            </div>
-                        </div>
-                        <h3 id="os" class="text-center">Systèmes d'exploitations</h3>
-                        <hr class="subline mb-3">
-                        <div class="row my-5">
-                            <div class="col-lg-3 col-6 offset-lg-2 text-center">
-                                <h4 id="dotnet">Windows</h4>
-                                <h5>XP, Vista, 7, 8.1, 10</h5>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
-                                <img class="img-fluid d-block m-auto" src="assets/img/windows.png" alt="Logo Windows">
-                            </div>
-                            <div class="col-lg-3 col-6 offset-lg-2 text-center">
-                                <h4 id="dotnet">Linux</h4>
-                                <h5>Ubuntu</h5>
-                                <p class="star-color"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-                                <img class="img-fluid d-block m-auto" src="assets/img/tux.png" alt="Tux et logo de Ubuntu">
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div id="projects" class="card d-none">
-                <div class="row">
-                    <div class="col-12 text-center mb-5">
-                        <h1>Projets Réalisés</h1>
-                        <h2>- Développeur Web & Web Mobile -</h2>
-                        <hr class="subline" />
-                    </div>
-                    <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
-                        <span class="fas fa-angle-double-left fa-3x" aria-hidden="true"></span>
-                        <span class="visually-hidden">Précédent</span>
-                    </a>
-                    <div id="projectCarousel" class="col-10 offset-1 carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="5000">
-                                <div class="row">
-                                    <div class="col-lg-8 col-12">
-                                        <img src="assets/img/fialkosport.png" class="d-block w-100" alt="Site Web Fialkosport">
-                                    </div>
-                                    <div class="col-lg-4 col-12 text-center">
-                                        <h3>Site catalogue réalisé pour l'Entreprise Fialkosport</h5>
-                                        <p>Réalisé en : HTML CSS et Bootstrap 4</p>
-                                        <p>Base de données MySQL et PHP 7 avec architecture MVC</p>
-                                        <p>Projet toujours en construction présenté à mon Titre Pro Développeur web en 2020.</p>
-                                        <p>En pause dut à l'activité de l'entreprise stoppée par la crise sanitaire.</p>
-                                    </div>
+        </div>
+        <div id="projects" class="card d-none">
+            <div class="row">
+                <div class="col-12 text-center my-3">
+                    <h2>- Mes Projets Réalisés -</h2>
+                    <hr class="subline" />
+                </div>
+                <a class="carousel-control-prev" href="#projectCarousel" role="button" data-bs-slide="prev">
+                    <span class="fas fa-angle-double-left fa-3x" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </a>
+                <div id="projectCarousel" class="col-10 offset-1 carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <div class="row">
+                                <div class="col-lg-8 col-12">
+                                    <img src="assets/img/fialkosport.png" class="d-block w-100" alt="Site Web Fialkosport">
+                                </div>
+                                <div class="col-lg-4 col-12 text-center d-lg-block d-none">
+                                    <h3>Site catalogue réalisé pour l'Entreprise Fialkosport</h5>
+                                    <p>Réalisé en : HTML CSS et Bootstrap 4</p>
+                                    <p>Base de données MySQL et PHP 7 avec architecture MVC</p>
+                                    <p>Projet toujours en construction présenté à mon Titre Pro Développeur web en 2020.</p>
+                                    <p>En pause dut à l'activité de l'entreprise stoppée par la crise sanitaire.</p>
                                 </div>
                             </div>
-                            <div class="carousel-item" data-bs-interval="5000">
-                                <div class="row">
-                                    <div class="col-lg-8 col-12">
-                                        <img src="assets/img/cvweb.png" class="d-block w-100" alt="CV Numérique Maxime pageot">
-                                    </div>
-                                    <div class="col-lg-4 col-12 text-center">
-                                        <h3>Ce CV Web</h5>
-                                        <p>Réalisé en : HTML CSS et JavaScript</p>
-                                        <p>Framework CSS : BootStrap 5</p>
-                                    </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <div class="row">
+                                <div class="col-lg-8 col-12">
+                                    <img src="assets/img/cvweb.png" class="d-block w-100" alt="CV Numérique Maxime pageot">
+                                </div>
+                                <div class="col-lg-4 col-12 text-center d-lg-block d-none">
+                                    <h3>Ce CV Web</h5>
+                                    <p>Réalisé en : HTML CSS et JavaScript</p>
+                                    <p>Framework CSS : BootStrap 5</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
-                        <span class="fas fa-angle-double-right fa-3x" aria-hidden="true"></span>
-                        <span class="visually-hidden">Suivant</span>
-                    </a>
-                </div>  
+                </div>
+                <a class="carousel-control-next" href="#projectCarousel" role="button" data-bs-slide="next">
+                    <span class="fas fa-angle-double-right fa-3x" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </a>
             </div>
-            <div id="about" class="card d-none">
-                <div class="row">
-                    <div class="col-12 text-center mb-5">
-                        <h1>À Propos</h1>
-                        <h2>Mes Hobbies & Occupations</h2>
-                        <hr class="subline" />
+        </div>
+        <div id="about" class="card d-none">
+            <div class="row">
+                <div class="col-12 text-center my-3">
+                    <h2>- Mes Hobbies & Occupations </h2>
+                    <hr class="subline" />
+                </div>
+                <div class="col-lg-3 col-10 mb-2 mx-auto hobby">
+                    <img class="img-fluid hobbyImg" src="assets/img/pool.jpg" />
+                    <div class="overlayText">
+                        <p>Natation en tant que loisir</p>
+                        <p>Pour garder un peu la forme</p>
                     </div>
-                    <div class="col-lg-3 col-10 mb-2 mx-auto hobby">
-                        <img class="img-fluid hobbyImg" src="assets/img/pool.jpg" />
-                        <div class="overlayText">
-                            <p>Natation en tant que loisir</p>
-                            <p>Pour garder un peu la forme</p>
-                        </div>
+                </div>
+                <div class="col-lg-3 col-10 mb-2 mx-auto hobby">
+                    <img class="img-fluid hobbyImg" src="assets/img/maintenance.jpg" />
+                    <div class="overlayText">
+                        <p>Maintenance informatique en autodidacte</p>
+                        <p>Autant Hardware que Software</p>
                     </div>
-                    <div class="col-lg-3 col-10 mb-2 mx-auto hobby">
-                        <img class="img-fluid hobbyImg" src="assets/img/maintenance.jpg" />
-                        <div class="overlayText">
-                            <p>Maintenance informatique en autodidacte</p>
-                            <p>Autant Hardware que Software</p>
-                        </div>
+                </div>
+                <div class="col-lg-3 col-10 mb-2 mx-auto hobby">
+                    <img class="img-fluid hobbyImg" src="assets/img/gaming.jpg" />
+                    <div class="overlayText">
+                        <p>Gaming</p>
+                        <p>Jeux de stratégie en temps réel & Tacticals RPGs</p>
                     </div>
-                    <div class="col-lg-3 col-10 mb-2 mx-auto hobby">
-                        <img class="img-fluid hobbyImg" src="assets/img/gaming.jpg" />
-                        <div class="overlayText">
-                            <p>Gaming</p>
-                            <p>Jeux de stratégie en temps réel & Tacticals RPGs</p>
-                        </div>
-                    </div>
-                </div>  
+                </div>
             </div>
         </div>
     </section>
@@ -529,4 +529,5 @@
     <script src="assets/fonts/fontawesome-free-5.15.1-web/js/all.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
